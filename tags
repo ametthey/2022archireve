@@ -1201,7 +1201,6 @@ add	includes/acf/includes/local-meta.php	/^		function add( $meta = array(), $pos
 addSelectedChoice	includes/acf/assets/inc/select2/3/select2.js	/^		addSelectedChoice: function ( data ) {$/;"	M
 addSelectedChoice	includes/acf/assets/inc/select2/3/select2.min.js	/^					addSelectedChoice: function ( c ) {$/;"	M
 addSliderAccess	includes/acf/assets/inc/timepicker/jquery-ui-timepicker-addon.js	/^			addSliderAccess: false,$/;"	P
-add_acf_columns	lib/acf.php	/^function add_acf_columns ( $columns ) {$/;"	f
 add_action	includes/acf/includes/assets.php	/^		public function add_action( $action, $method, $priority = 10, $accepted_args = 1 ) {$/;"	f
 add_action	includes/acf/includes/fields/class-acf-field.php	/^		function add_action( $tag = '', $function_to_add = '', $priority = 10, $accepted_args = 1 ) {$/;"	f
 add_actions	includes/acf/includes/ajax/class-acf-ajax.php	/^		function add_actions() {$/;"	f
@@ -1717,6 +1716,7 @@ but	includes/acf/includes/api/api-helpers.php	/^ * Similar to the version_compar
 button	includes/acf/includes/forms/form-widget.php	/^		var $button = $(this);$/;"	v
 button	includes/acf/pro/admin/views/html-settings-updates.php	/^$button   = $active ? __( 'Deactivate License', 'acf' ) : __( 'Activate License', 'acf' );$/;"	v
 button	src/assets/js/component/reservation.js	/^const button = document.querySelector('.button-reservation');$/;"	V
+button	src/assets/js/components/header.js	/^const button = document.querySelector('#nav-mobile-apropos-button');$/;"	V
 button	src/assets/js/effect/text-reveal.js	/^            const button = container.querySelector('.text-reveal-button');$/;"	V
 button	src/assets/js/effect/text-reveal.js	/^        const button = theContainer.querySelector('.text-reveal-button');$/;"	V
 buttonGroup	src/assets/js/component/filter-isotope.js	/^        var buttonGroup = utils.getParent( event.target, '.button-group' );$/;"	V
@@ -1899,6 +1899,7 @@ chars	includes/acf/includes/api/api-helpers.php	/^	$chars    = str_split( $date_
 check	includes/acf/includes/acf-value-functions.php	/^	$check = apply_filters( 'acf\/pre_format_value', null, $value, $post_id, $field );$/;"	v
 check	includes/acf/includes/acf-value-functions.php	/^	$check = apply_filters( 'acf\/pre_update_value', null, $value, $post_id, $field );$/;"	v
 checkClasses	src/assets/js/component/header.js	/^function checkClasses() {$/;"	F
+checkClasses	src/assets/js/components/header.js	/^function checkClasses() {$/;"	F
 checkDates	includes/acf/assets/inc/timepicker/jquery-ui-timepicker-addon.js	/^		function checkDates( changed, other ) {$/;"	F
 checkFormatter	includes/acf/assets/inc/select2/3/select2.js	/^	function checkFormatter( formatter, formatterName ) {$/;"	F
 checkText	includes/acf/assets/inc/select2/4/select2.full.js	/^						var checkText = optionText === paramsTerm;$/;"	V
@@ -2133,6 +2134,7 @@ content	includes/acf/pro/blocks.php	/^		$content = str_replace( '$', '\\$', $con
 content	includes/acf/pro/blocks.php	/^function acf_render_block( $attributes, $content = '', $is_preview = false, $post_id = 0, $wp_block = null, $context = false ) {$/;"	v
 content	includes/acf/pro/blocks.php	/^function acf_render_block_callback( $attributes, $content = '', $wp_block = null ) {$/;"	v
 content	includes/acf/pro/blocks.php	/^function acf_rendered_block( $attributes, $content = '', $is_preview = false, $post_id = 0, $wp_block = null, $context = false ) {$/;"	v
+content	src/assets/js/components/header.js	/^const content = document.querySelector('#header-mobile-apropos-content');$/;"	V
 context	includes/acf/assets/inc/select2/3/select2.js	/^							context: null,$/;"	P
 context	includes/acf/assets/inc/select2/3/select2.js	/^					context: context,$/;"	P
 context	includes/acf/assets/inc/select2/3/select2.js	/^				context = this.context;$/;"	P
@@ -3603,7 +3605,6 @@ get_fields	includes/acf/includes/rest-api/class-acf-rest-api.php	/^	private func
 get_fields	includes/acf/includes/walkers/class-acf-walker-nav-menu-edit.php	/^		function get_fields( $item, $depth, $args = array(), $id = 0 ) {$/;"	f
 get_files	includes/acf/includes/local-json.php	/^		public function get_files() {$/;"	f
 get_form	includes/acf/includes/forms/form-front.php	/^		function get_form( $id = '' ) {$/;"	f
-get_group_field	lib/acf.php	/^	function get_group_field( string $group, string $field, $post_id = 0 ) {$/;"	f
 get_human_readable_file_location	includes/acf/includes/admin/admin-field-groups.php	/^		public function get_human_readable_file_location( $file ) {$/;"	f
 get_i	includes/acf/includes/loop.php	/^		function get_i( $i = 0 ) {$/;"	f
 get_instance	includes/acf/acf.php	/^		function get_instance( $class ) {$/;"	f
@@ -3750,7 +3751,6 @@ group	includes/acf/includes/api/api-helpers.php	/^		if ( $group === null ) {$/;"
 group	includes/acf/includes/api/api-term.php	/^		$group                             = $labels[ $term->taxonomy ];$/;"	v
 group	includes/acf/includes/api/api-term.php	/^	foreach ( $value as $group => $terms ) {$/;"	v
 group	includes/acf/includes/local-fields.php	/^			\/\/ $group = acf_get_field_group( $group['key'] );$/;"	v
-group_data	lib/acf.php	/^		$group_data = get_field( $group, $post_id );$/;"	v
 group_i	includes/acf/includes/acf-field-functions.php	/^		foreach ( $field['conditional_logic'] as $group_i => $group ) {$/;"	v
 group_id	includes/acf/includes/admin/views/field-group-field-conditional-logic.php	/^				$group_id = "group_{$group_id}";$/;"	v
 group_id	includes/acf/includes/admin/views/field-group-field-conditional-logic.php	/^			foreach ( $field['conditional_logic'] as $group_id => $group ) :$/;"	v
@@ -5185,7 +5185,9 @@ measureTextWidth	includes/acf/assets/inc/select2/3/select2.js	/^	function measur
 measuredFPS	src/assets/js/helper/gsap-performance-check.js	/^                let measuredFPS = (gsap.ticker.frame - startFrame) \/ duration;$/;"	F
 measuredFPS	src/assets/js/helper/gsap-performance-check.js	/^                let measuredFPS = (gsap.ticker.frame - startFrame) \/ duration;$/;"	V
 mediaQuery	src/assets/js/component/header.js	/^const mediaQuery = '(max-width: 768px)';$/;"	V
+mediaQuery	src/assets/js/components/header.js	/^const mediaQuery = '(max-width: 768px)';$/;"	V
 mediaQueryList	src/assets/js/component/header.js	/^const mediaQueryList = window.matchMedia(mediaQuery);$/;"	V
+mediaQueryList	src/assets/js/components/header.js	/^const mediaQueryList = window.matchMedia(mediaQuery);$/;"	V
 menu_id	includes/acf/includes/forms/form-nav-menu.php	/^		function wp_edit_nav_menu_walker( $class, $menu_id = 0 ) {$/;"	v
 menu_locations	includes/acf/includes/locations/class-acf-location-nav-menu.php	/^				$menu_locations = get_nav_menu_locations();$/;"	v
 message	includes/acf/acf.php	/^				$message = __( "Advanced Custom Fields and Advanced Custom Fields PRO should not be active at the same time. We've automatically deactivated Advanced Custom Fields PRO.", 'acf' );$/;"	v
@@ -6376,7 +6378,6 @@ post_id	includes/acf/pro/blocks.php	/^			$post_id = isset( $context['postId'] ) 
 post_id	includes/acf/pro/blocks.php	/^		$post_id = get_the_ID();$/;"	v
 post_id	includes/acf/pro/blocks.php	/^	$post_id     = $args['post_id'];$/;"	v
 post_id	includes/acf/pro/blocks.php	/^	$post_id    = get_the_ID();$/;"	v
-post_id	lib/acf.php	/^	function get_group_field( string $group, string $field, $post_id = 0 ) {$/;"	v
 post_ids	includes/acf/includes/acf-field-functions.php	/^		$post_ids = array();$/;"	v
 post_ids	includes/acf/includes/acf-field-functions.php	/^	$post_ids  = wp_cache_get( $cache_key, 'acf' );$/;"	v
 post_ids	includes/acf/includes/acf-field-functions.php	/^	if ( $post_ids === false ) {$/;"	v
@@ -6691,7 +6692,6 @@ register_field	includes/acf/includes/rest-api/class-acf-rest-api.php	/^	private 
 register_field_group	includes/acf/includes/local-fields.php	/^function register_field_group( $field_group ) {$/;"	f
 register_field_type	includes/acf/includes/fields.php	/^		function register_field_type( $class ) {$/;"	f
 register_field_type_info	includes/acf/includes/fields.php	/^		function register_field_type_info( $info ) {$/;"	f
-register_hero_block	lib/acf.php	/^function register_hero_block() {$/;"	f
 register_options_page	includes/acf/pro/options-page.php	/^	function register_options_page( $page = '' ) {$/;"	f
 register_post_status	includes/acf/acf.php	/^		function register_post_status() {$/;"	f
 register_post_types	includes/acf/acf.php	/^		function register_post_types() {$/;"	f
@@ -7065,7 +7065,6 @@ s	includes/acf/includes/fields/class-acf-field-taxonomy.php	/^				$s = wp_unslas
 s	includes/acf/pro/fields/class-acf-field-clone.php	/^				$s = wp_unslash( strval( $options['s'] ) );$/;"	v
 s	includes/acf/pro/fields/class-acf-field-clone.php	/^			$s           = false;$/;"	v
 safely	includes/acf/includes/updates.php	/^		 *  This function safely gets the expiration value from a response.$/;"	f
-salle_custom_column	lib/acf.php	/^function salle_custom_column ( $column, $post_id ) {$/;"	f
 save	includes/acf/includes/acf-field-functions.php	/^		$save       = acf_get_sub_array( $save, $specific );$/;"	v
 save	includes/acf/includes/acf-field-functions.php	/^	$save = array($/;"	v
 save	includes/acf/includes/acf-field-functions.php	/^	$save = wp_slash( $save );$/;"	v

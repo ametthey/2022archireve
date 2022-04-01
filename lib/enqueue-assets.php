@@ -5,7 +5,6 @@
  ***********************************************************************/
 function _themename_assets() {
     wp_enqueue_style( '_themename-stylesheet', get_stylesheet_directory_uri() . '/dist/assets/css/bundle.css', [], filemtime( get_template_directory().'/dist/assets/css/bundle.css' ) ,  'all' );
-    wp_enqueue_script( '_themename-weezevent', 'https://widget.weezevent.com/weez.js', [], '', true );
     wp_enqueue_script( '_themename-scripts', get_stylesheet_directory_uri() . '/dist/assets/js/main.js',[] , filemtime( get_template_directory().'/dist/assets/js/main.js' ) ,   true );
 }
 add_action( 'wp_enqueue_scripts', '_themename_assets' );

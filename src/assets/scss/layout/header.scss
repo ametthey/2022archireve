@@ -1,0 +1,109 @@
+/***********************************************************************
+ * HEADER DEFAULT
+ ***********************************************************************/
+#header-default {
+    align-items: center;
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    position: relative;
+}
+
+
+/***********************************************************************
+ * HEADER HOME
+ ***********************************************************************/
+#header-home {
+    background-color: $bg;
+    border-bottom: 1px solid $color;
+    display: grid;
+    grid-template-areas:
+    "navd logo e";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 50px;
+    position: relative;
+    z-index: 2;
+    padding: 0 $r2;
+
+    @include respond(tablet) {
+        grid-template-areas:
+        "navp logo navc";
+        padding: 0 $rs;
+    }
+
+    & > * {
+        align-self: center;
+    }
+}
+
+#nav-desktop {
+    display: flex;
+    grid-area: navd;
+
+    #nav-desktop-connexion {
+        margin-right: $r2;
+    }
+
+    @include respond(tablet) {
+        display: none;
+    }
+}
+
+#nav-mobile-apropos-button {
+    display: none;
+    grid-area: navp;
+
+    @include respond(tablet) {
+        display: block;
+    }
+}
+
+#nav-logo {
+    grid-area: logo;
+    justify-self: center;
+
+    svg {
+        width: 210px;
+
+        @include respond(tablet) {
+            height: $small;
+            width: auto;
+        }
+    }
+}
+
+#nav-mobile-connexion {
+    grid-area: navc;
+    justify-self: end;
+    display: none;
+
+    @include respond(tablet) {
+        display: block;
+    }
+}
+
+#nav-desktop-empty {
+    grid-area: nave;
+    display: flex;
+
+    @include respond(tablet) {
+        display: none;
+    }
+}
+
+#header-mobile-apropos-content {
+    background-color: $bg;
+    display: none;
+    transform: translateY(-100%);
+    transition: $transition;
+    position: absolute;
+    z-index: 1;
+
+    &.open {
+        transform:  translateY(0%);
+    }
+
+    @include respond(tablet) {
+        display: flex;
+    }
+}

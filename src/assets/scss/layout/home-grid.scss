@@ -1,0 +1,30 @@
+#container-home {
+    display: flex;
+    height: calc( 100vh - 51px );
+}
+
+#container-filtres {
+    border-right: 1px solid $color;
+    height: inherit;
+    transition: $transition;
+    width:  50px;
+
+    @include respond(tablet) {
+        width: 25px;
+    }
+}
+
+#container-reves {
+    width:  calc( 100% - 100px );
+}
+
+#container-apropos {
+    border-left: 1px solid $color;
+    transition: $transition;
+    width:  50px;
+    display: flex;
+
+    @include respond(tablet) {
+        display: none;
+    }
+}

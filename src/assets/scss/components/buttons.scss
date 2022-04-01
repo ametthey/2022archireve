@@ -1,0 +1,46 @@
+// TYPE
+.button-round-corner {
+    background-color: $bg;
+    border-radius: 100px 100px 100px 100px;
+    border: 1px solid $color;
+    color: $color;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    transition: $transition;
+
+    &:hover {
+        background-color: $color;
+        border-color: $bg;
+        color: $bg;
+    }
+}
+
+.button-round-circle {
+    border: 1px solid $color;
+    border-radius: 999px;
+    background-color: $color;
+    cursor: pointer;
+    height: 14px;
+    width: 14px;
+    transition: $transition;
+
+    &:hover {
+        border: 1px solid $color;
+        background-color: $bg;
+    }
+}
+
+// SIZE
+.button-small {
+    font-size: 12px;
+}
+
+.button-medium {
+    font-size: 20px;
+}
+
+.button-big {
+    font-size: 26px;
+}
+
+// COLORS

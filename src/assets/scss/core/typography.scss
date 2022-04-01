@@ -1,0 +1,33 @@
+body {
+    font-family: $covik;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    color: $color;
+
+    &:visited {
+        color: $color;
+    }
+
+    &:hover {
+        color: $color;
+    }
+}
+
+a {
+  font-size: 12px;
+  line-height: 9.2px;
+}
+a::before {
+  content: "";
+  margin-bottom: -0.2045em;
+  display: table;
+}
+
+a::after {
+  content: "";
+  margin-top: -0.0455em;
+  display: table;
+}

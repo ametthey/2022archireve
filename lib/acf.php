@@ -40,84 +40,16 @@ function cysp_acf_json_load_point( $paths ) {
 }
 
 /***********************************************************************
- * Blocks
+ * Options Fields
  ***********************************************************************/
-add_action( 'acf/init', 'register_hero_block' );
-function register_hero_block() {
+if ( function_exists( 'acf_add_options_page' ) ) {
 
-    if ( function_exists( 'acf_register_block_type' ) ) {
+	acf_add_options_page( array(
+		'page_title'	=> 'Credits',
+		'menu_title'	=> 'Credits',
+		'menu_slug' 	=> 'acf-credits',
+		'capability'	=> 'edit_posts',
+		'redirect'		=> false,
+	));
 
-        // Register Hero block
-        acf_register_block_type( array(
-            'name' 					=> 'hero',
-            'title' 				=> __( 'Hero' ),
-            'description' 			=> __( 'A custom Hero block.' ),
-            'category' 				=> 'formatting',
-            'icon'					=> 'layout',
-            'keywords'				=> array( 'hero' ),
-            'post_types'			=> array( 'post', 'page' ),
-            'mode'					=> 'auto',
-            // 'align'				=> 'wide',
-            'render_template'		=> 'template-parts/component/hero.php',
-            // 'render_callback'	=> 'hero_block_render_callback',
-            // 'enqueue_style' 		=> get_template_directory_uri() . '/template-parts/blocks/hero/hero.css',
-            // 'enqueue_script' 	=> get_template_directory_uri() . '/template-parts/blocks/hero/hero.js',
-            // 'enqueue_assets' 	=> 'hero_block_enqueue_assets',
-        ));
-
-    }
-
-}
-
-
-
-/***********************************************************************
- * Options pages
- ***********************************************************************/
-
-/***********************************************************************
- * Columns - Salle
- ***********************************************************************/
-function add_acf_columns ( $columns ) {
-    return array_merge ( $columns, array (
-        'nombre_de_place_totale' => __ ( 'Nombres de places totale' ),
-        'nombre_de_place_disponible' => __ ( 'Places restantes' ),
-        // 'nom_de_la_salle' => _ ('Nom'),
-    ) );
-}
-add_filter ( 'manage_salle_posts_columns', 'add_acf_columns' );
-
-
-/*
- * Add columns to Hosting CPT
- */
-function salle_custom_column ( $column, $post_id ) {
-    switch ( $column ) {
-    case 'nombre_de_place_totale':
-        // en dessous, mettre le nom exact du ACF Field
-        echo get_post_meta ( $post_id, 'nombre_de_place_totale', true );
-        break;
-    case 'nombre_de_place_disponible':
-        // en dessous, mettre le nom exact du ACF Field
-        echo get_post_meta ( $post_id, 'nombre_de_place_disponible', true );
-        break;
-    // case 'nom_de_la_salle':
-    //     // en dessous, mettre le nom exact du ACF Field
-    //     echo get_post_meta ( $post_id, 'nom_de_la_salle', true );
-    //     break;
-    }
-}
-add_action ( 'manage_salle_posts_custom_column', 'salle_custom_column', 10, 2 );
-
-/***********************************************************************
- * Nested Group
- ***********************************************************************/
-if ( function_exists( 'get_field' ) ) {
-	function get_group_field( string $group, string $field, $post_id = 0 ) {
-		$group_data = get_field( $group, $post_id );
-		if ( is_array( $group_data ) && array_key_exists( $field, $group_data ) ) {
-			return $group_data[ $field ];
-		}
-		return null;
-	}
 }

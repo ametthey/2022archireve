@@ -1,0 +1,40 @@
+.container-cover {
+    transform: rotate(-180deg);
+    writing-mode: sideways-lr;
+
+    p {
+        cursor: pointer;
+        margin-bottom: $r2;
+
+        @include respond(tablet) {
+            font-size: $small;
+            margin-bottom: $r2;
+            margin-left: 6px;
+            margin-right: 6px;
+        }
+    }
+}
+
+.container-cover-apropos {
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+
+    .bandeaux-apropos-credits {
+        align-items: center;
+        display: flex;
+        margin-top: $r2;
+
+        p {
+            cursor: default;
+        }
+
+        p, a {
+            font-size: $small;
+        }
+
+        span {
+            margin: $r 0;
+        }
+    }
+}
