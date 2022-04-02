@@ -31,3 +31,9 @@ a::after {
   margin-top: -0.0455em;
   display: table;
 }
+
+h1 {
+   font-size: $h1;
+   font-family: $solid;
+   text-transform: uppercase;
+}

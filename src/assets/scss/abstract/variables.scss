@@ -1,6 +1,16 @@
 // Colors
 $bg: #fcfcfc;
 $color: #303030;
+$violet: #6453A3;
+$cauchemar: #6755AA;
+$commun: #256EFF;
+$concomitant: #2CAF38;
+$creatif: #F79D65;
+$actualite: #99BA22;
+$recurrent: #DB5931;
+$sexuel: #D67083;
+$premonitoire: #4CA58E;
+$lucide: #c12b2b;
 
 // Typography
 $solid: 'Solide Mirage', serif;
@@ -11,9 +21,17 @@ $good: 'GoodGlyphs';
 // Sizes
 // Buttons
 $small: 12px;
+$h1: clamp(1.125rem, 0.0566rem + 2.8537vw, 2.625rem);;
+$h2: 26px;
+$h3: 22px;
+$h4: 20px;
+$h5: 16px;
 
 
+$b1: 1px;
+$b2: 1px;
 
+$rss: 2px;
 $rs: 4px;
 $r: 8px;
 $r2: calc( #{$r} * 2 );

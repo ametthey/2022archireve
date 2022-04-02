@@ -1,0 +1,83 @@
+#container-home {
+    display: flex;
+    height: calc( 100vh - 51px );
+}
+
+.bandeau {
+    background-color: $bg;
+}
+
+/***********************************************************************
+ * CONTAINER FILTRES
+ ***********************************************************************/
+#container-filtres {
+    border-right: 1px solid $color;
+    height: inherit;
+    transition: $transition;
+    position: relative;
+    width:  50px;
+
+    &.open {
+        width: 450px;
+
+        #close-black {
+            display: block;
+        }
+    }
+
+    @include respond(tablet) {
+        width: 35px;
+    }
+}
+
+
+/***********************************************************************
+ * CONTAINER REVES
+ ***********************************************************************/
+#container-reves {
+    transition: $transition;
+    overflow: auto;
+    width:  calc( 100% - 100px );
+
+    &.closed {
+        width: 50px;
+
+        .container-cover {
+            display: block;
+        }
+
+        #wrapper-reves {
+            display: none;
+        }
+    }
+
+    @include respond(tablet) {
+        width: 100%;
+    }
+}
+
+
+/***********************************************************************
+ * CONTAINER A PROPOS
+ ***********************************************************************/
+#container-apropos {
+    border-left: 1px solid $color;
+    transition: $transition;
+    width:  50px;
+    display: flex;
+    background-color: $color;
+    color: $bg;
+    position: relative;
+
+    &.open {
+        width: calc( 100% - 100px );
+
+        #close-white {
+            display: block;
+        }
+    }
+
+    @include respond(tablet) {
+        display: none;
+    }
+}

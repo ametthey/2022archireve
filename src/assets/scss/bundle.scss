@@ -12,12 +12,15 @@
 @import 'components/bandeaux';
 
 // LAYOUT
+@import 'layout/base';
 @import 'layout/header';
-@import 'layout/home-grid';
+@import 'layout/bandeaux-content';
 
 // PAGES
 
 // BLOCKS
+@import 'blocks/home-wrapper-reves';
+@import 'blocks/home-reve-item';
 
 // VENDORS
 

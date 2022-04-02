@@ -1,38 +1,38 @@
 <?php
-function _themename_create_evenement_cpt() {
+function _themename_create_reve_cpt() {
 
     $labels = array(
-        'name' => _x( 'evenements', 'Post Type General Name', '_themename' ),
-        'singular_name' => _x( 'evenement', 'Post Type Singular Name', '_themename' ),
-        'menu_name' => _x( 'Évenements', 'Admin Menu text', '_themename' ),
-        'name_admin_bar' => _x( 'evenement', 'Add New on Toolbar', '_themename' ),
-        'archives' => __( 'Archives evenement', '_themename' ),
-        'attributes' => __( 'Attributs evenement', '_themename' ),
-        'parent_item_colon' => __( 'Parents evenement:', '_themename' ),
-        'all_items' => __( 'Tous les évenements', '_themename' ),
-        'add_new_item' => __( 'Ajouter nouvel évenement', '_themename' ),
+        'name' => _x( 'Rêves', 'Post Type General Name', '_themename' ),
+        'singular_name' => _x( 'Rêve', 'Post Type Singular Name', '_themename' ),
+        'menu_name' => _x( 'Rêves', 'Admin Menu text', '_themename' ),
+        'name_admin_bar' => _x( 'Rêve', 'Add New on Toolbar', '_themename' ),
+        'archives' => __( 'Archives Reve', '_themename' ),
+        'attributes' => __( 'Attributs reve', '_themename' ),
+        'parent_item_colon' => __( 'Parents reve:', '_themename' ),
+        'all_items' => __( 'Tous les Rêves', '_themename' ),
+        'add_new_item' => __( 'Ajouter un nouvel Reve', '_themename' ),
         'add_new' => __( 'Ajouter', '_themename' ),
-        'new_item' => __( 'Nouvel évenement', '_themename' ),
-        'edit_item' => __( 'Modifier l\'évenement', '_themename' ),
-        'update_item' => __( 'Mettre à jour l\'évenement', '_themename' ),
-        'view_item' => __( 'Voir évenement', '_themename' ),
-        'view_items' => __( 'Voir évenements', '_themename' ),
-        'search_items' => __( 'Rechercher dans les evenement', '_themename' ),
-        'not_found' => __( 'Aucun évenement trouvé.', '_themename' ),
-        'not_found_in_trash' => __( 'Aucun évenement trouvé dans la corbeille.', '_themename' ),
+        'new_item' => __( 'Nouvel reve', '_themename' ),
+        'edit_item' => __( 'Modifier l\'reve', '_themename' ),
+        'update_item' => __( 'Mettre à jour l\'reve', '_themename' ),
+        'view_item' => __( 'Voir reve', '_themename' ),
+        'view_items' => __( 'Voir reves', '_themename' ),
+        'search_items' => __( 'Rechercher dans les reve', '_themename' ),
+        'not_found' => __( 'Aucun rêve trouvé.', '_themename' ),
+        'not_found_in_trash' => __( 'Aucun reve trouvé dans la corbeille.', '_themename' ),
         'featured_image' => __( 'Image mise en avant', '_themename' ),
         'set_featured_image' => __( 'Définir l’image mise en avant', '_themename' ),
         'remove_featured_image' => __( 'Supprimer l’image mise en avant', '_themename' ),
         'use_featured_image' => __( 'Utiliser comme image mise en avant', '_themename' ),
-        'insert_into_item' => __( 'Insérer dans evenement', '_themename' ),
-        'uploaded_to_this_item' => __( 'Téléversé sur cet evenement', '_themename' ),
-        'items_list' => __( 'Liste evenements', '_themename' ),
-        'items_list_navigation' => __( 'Navigation de la liste evenements', '_themename' ),
-        'filter_items_list' => __( 'Filtrer la liste evenements', '_themename' ),
+        'insert_into_item' => __( 'Insérer dans reve', '_themename' ),
+        'uploaded_to_this_item' => __( 'Téléversé sur cet reve', '_themename' ),
+        'items_list' => __( 'Liste reves', '_themename' ),
+        'items_list_navigation' => __( 'Navigation de la liste reves', '_themename' ),
+        'filter_items_list' => __( 'Filtrer la liste reves', '_themename' ),
     );
     $args = array(
-        'label' => __( 'evenement', '_themename' ),
-        'description' => __( 'Les événements', '_themename' ),
+        'label' => __( 'reve', '_themename' ),
+        'description' => __( 'Les rêves', '_themename' ),
         'labels' => $labels,
         'menu_icon' => 'dashicons-feedback',
         'supports' => array('title', 'thumbnail'),
@@ -51,45 +51,45 @@ function _themename_create_evenement_cpt() {
         'publicly_queryable' => true,
         'capability_type' => 'page',
     );
-    register_post_type( 'evenement', $args );
+    register_post_type( 'reve', $args );
 
 }
-add_action( 'init', '_themename_create_evenement_cpt', 0 );
+add_action( 'init', '_themename_create_reve_cpt', 0 );
 
-function _themename_create_intervenant_cpt() {
+function _themename_create_reveur_cpt() {
 
     $labels = array(
-        'name' => _x( 'intervenantes', 'Post Type General Name', '_themename' ),
-        'singular_name' => _x( 'intervenante', 'Post Type Singular Name', '_themename' ),
-        'menu_name' => _x( 'Intervenantes', 'Admin Menu text', '_themename' ),
-        'name_admin_bar' => _x( 'intervenante', 'Add New on Toolbar', '_themename' ),
-        'archives' => __( 'Archives intervenante', '_themename' ),
-        'attributes' => __( 'Attributs intervenante', '_themename' ),
-        'parent_item_colon' => __( 'Parents intervenante:', '_themename' ),
-        'all_items' => __( 'Tous les intervenantes', '_themename' ),
-        'add_new_item' => __( 'Ajouter nouvelle intervenante', '_themename' ),
+        'name' => _x( 'reveurs', 'Post Type General Name', '_themename' ),
+        'singular_name' => _x( 'reveur', 'Post Type Singular Name', '_themename' ),
+        'menu_name' => _x( 'reveurs', 'Admin Menu text', '_themename' ),
+        'name_admin_bar' => _x( 'reveur', 'Add New on Toolbar', '_themename' ),
+        'archives' => __( 'Archives reveur', '_themename' ),
+        'attributes' => __( 'Attributs reveur', '_themename' ),
+        'parent_item_colon' => __( 'Parents reveur:', '_themename' ),
+        'all_items' => __( 'Tous les reveurs', '_themename' ),
+        'add_new_item' => __( 'Ajouter nouvelle reveur', '_themename' ),
         'add_new' => __( 'Ajouter', '_themename' ),
-        'new_item' => __( 'Nouvelle intervenante', '_themename' ),
-        'edit_item' => __( 'Modifier l\'intervenante', '_themename' ),
-        'update_item' => __( 'Mettre à jour l\'intervenante', '_themename' ),
-        'view_item' => __( 'Voir intervenante', '_themename' ),
-        'view_items' => __( 'Voir intervenantes', '_themename' ),
-        'search_items' => __( 'Rechercher dans les intervenantes', '_themename' ),
-        'not_found' => __( 'Aucune intervenante trouvé.', '_themename' ),
-        'not_found_in_trash' => __( 'Aucune intervenante trouvée dans la corbeille.', '_themename' ),
+        'new_item' => __( 'Nouvelle reveur', '_themename' ),
+        'edit_item' => __( 'Modifier l\'reveur', '_themename' ),
+        'update_item' => __( 'Mettre à jour l\'reveur', '_themename' ),
+        'view_item' => __( 'Voir reveur', '_themename' ),
+        'view_items' => __( 'Voir reveurs', '_themename' ),
+        'search_items' => __( 'Rechercher dans les reveurs', '_themename' ),
+        'not_found' => __( 'Aucune reveur trouvé.', '_themename' ),
+        'not_found_in_trash' => __( 'Aucune reveur trouvée dans la corbeille.', '_themename' ),
         'featured_image' => __( 'Image mise en avant', '_themename' ),
         'set_featured_image' => __( 'Définir l’image mise en avant', '_themename' ),
         'remove_featured_image' => __( 'Supprimer l’image mise en avant', '_themename' ),
         'use_featured_image' => __( 'Utiliser comme image mise en avant', '_themename' ),
-        'insert_into_item' => __( 'Insérer dans intervenante', '_themename' ),
-        'uploaded_to_this_item' => __( 'Téléversé sur cette intervenante', '_themename' ),
-        'items_list' => __( 'Liste des intervenantes', '_themename' ),
-        'items_list_navigation' => __( 'Navigation de la liste intervenantes', '_themename' ),
-        'filter_items_list' => __( 'Filtrer la liste intervenantes', '_themename' ),
+        'insert_into_item' => __( 'Insérer dans reveur', '_themename' ),
+        'uploaded_to_this_item' => __( 'Téléversé sur cette reveur', '_themename' ),
+        'items_list' => __( 'Liste des reveurs', '_themename' ),
+        'items_list_navigation' => __( 'Navigation de la liste reveurs', '_themename' ),
+        'filter_items_list' => __( 'Filtrer la liste reveurs', '_themename' ),
     );
     $args = array(
-        'label' => __( 'intervenantes', '_themename' ),
-        'description' => __( 'Les intervenantes', '_themename' ),
+        'label' => __( 'reveurs', '_themename' ),
+        'description' => __( 'Les reveurs', '_themename' ),
         'labels' => $labels,
         'menu_icon' => 'dashicons-admin-users',
         'supports' => array('title'),
@@ -108,7 +108,7 @@ function _themename_create_intervenant_cpt() {
         'publicly_queryable' => true,
         'capability_type' => 'page',
     );
-    register_post_type( 'intervenante', $args );
+    register_post_type( 'reveur', $args );
 
 }
-add_action( 'init', '_themename_create_intervenant_cpt', 0 );
+add_action( 'init', '_themename_create_reveur_cpt', 0 );

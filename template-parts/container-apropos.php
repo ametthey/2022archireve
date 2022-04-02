@@ -1,6 +1,6 @@
-<div id="container-apropos">
+<div class="bandeau" id="container-apropos">
     <div class="container-cover container-cover-apropos">
-        <p>A PROPOS</p>
+        <p class="container-cover-title">A PROPOS</p>
 
         <div class="bandeaux-apropos-credits">
             <p>©ARCHIREVE<?php echo date( 'Y' ); ?></p>
@@ -10,4 +10,7 @@
             <a href="<?php the_field( 'instagram', 'option' ); ?>" target="_blank">INSTAGRAM</a>
         </div>
     </div>
+
+    <?php get_template_part( 'template-parts/elements/close-white' ); ?>
+
 </div>

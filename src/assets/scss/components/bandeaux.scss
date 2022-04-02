@@ -1,13 +1,15 @@
+/***********************************************************************
+ * COVER
+ ***********************************************************************/
 .container-cover {
     transform: rotate(-180deg);
-    writing-mode: sideways-lr;
+    writing-mode: vertical-rl;
 
-    p {
+    .container-cover-title {
         cursor: pointer;
-        margin-bottom: $r2;
+        margin-bottom: $r4;
 
         @include respond(tablet) {
-            font-size: $small;
             margin-bottom: $r2;
             margin-left: 6px;
             margin-right: 6px;
@@ -20,7 +22,12 @@
     justify-content: space-between;
     display: flex;
 
+    .container-cover-title {
+        order: 2;
+    }
+
     .bandeaux-apropos-credits {
+        order: 1;
         align-items: center;
         display: flex;
         margin-top: $r2;
@@ -30,11 +37,51 @@
         }
 
         p, a {
+            color: $bg;
             font-size: $small;
         }
 
         span {
             margin: $r 0;
         }
+    }
+}
+
+.container-cover-reves {
+    display: none;
+}
+/***********************************************************************
+ * CLOSE BUTTONS
+ ***********************************************************************/
+
+.close-button {
+    cursor: pointer;
+}
+
+#close-black {
+    position: absolute;
+    top: $r4;
+    right: $r;
+    display: none;
+
+    @include respond(tablet) {
+        top: $r2;
+        right: $rs;
+        transform: scale(0.8);
+        transform-origin: top right;
+    }
+}
+
+#close-white {
+    position: absolute;
+    top: $r4;
+    right: $r;
+    display: none;
+
+    @include respond(tablet) {
+        top: $r2;
+        right: $rs;
+        transform: scale(0.8);
+        transform-origin: top right;
     }
 }

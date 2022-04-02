@@ -2,7 +2,7 @@
 .button-round-corner {
     background-color: $bg;
     border-radius: 100px 100px 100px 100px;
-    border: 1px solid $color;
+    border: $b1 solid $color;
     color: $color;
     padding: 5px 10px;
     text-transform: uppercase;
@@ -16,7 +16,7 @@
 }
 
 .button-round-circle {
-    border: 1px solid $color;
+    border: $b2 solid $color;
     border-radius: 999px;
     background-color: $color;
     cursor: pointer;
@@ -25,22 +25,30 @@
     transition: $transition;
 
     &:hover {
-        border: 1px solid $color;
+        border: $b2 solid $color;
+        background-color: $bg;
+    }
+
+    &.button-round-circle-white {
         background-color: $bg;
     }
 }
 
 // SIZE
 .button-small {
-    font-size: 12px;
+    font-size: $small;
 }
 
 .button-medium {
-    font-size: 20px;
+    font-size: $h4;
+
+    @include respond(tablet) {
+        font-size: $small;
+    }
 }
 
 .button-big {
-    font-size: 26px;
+    font-size: $h2;
 }
 
 // COLORS
