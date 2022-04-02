@@ -4,7 +4,6 @@
     border-radius: 100px 100px 100px 100px;
     border: $b1 solid $color;
     color: $color;
-    padding: 5px 10px;
     text-transform: uppercase;
     transition: $transition;
 
@@ -12,6 +11,24 @@
         background-color: $color;
         border-color: $bg;
         color: $bg;
+    }
+
+    &.button-no-hover {
+        background-color: $bg;
+        border-color: $color;
+        color: $color;
+    }
+}
+
+.button-round-corner-black {
+    background-color: $color;
+    color: $bg;
+    border: $b1 solid $bg;
+
+    &:hover {
+        background-color: $bg;
+        color: $color;
+        border-color: $color;
     }
 }
 
@@ -41,10 +58,12 @@
 // SIZE
 .button-small {
     font-size: $small;
+    padding: 5px 10px;
 }
 
 .button-medium {
     font-size: $h4;
+    padding: 5px 10px;
 
     @include respond(tablet) {
         font-size: $small;
@@ -53,6 +72,7 @@
 
 .button-big {
     font-size: $h2;
+    padding: 15px 35px;
 }
 
 // COLORS

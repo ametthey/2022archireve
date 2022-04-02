@@ -2,24 +2,26 @@
  * COVER
  ***********************************************************************/
 .container-cover {
-    align-items: center;
     display: flex;
     transform: rotate(-180deg);
-    width: 100%;
+    // width: 100%;
     writing-mode: vertical-rl;
 
     .container-cover-title {
         cursor: pointer;
         margin-bottom: $r4;
+        margin-left: 15.5px;
+        margin-right: 15.5px;
 
         @include respond(tablet) {
             margin-bottom: $r2;
+            margin-left: 8px;
+            margin-right: 8px;
         }
     }
 }
 
 .container-cover-apropos {
-    align-items: center;
     justify-content: space-between;
     display: flex;
 
@@ -32,6 +34,8 @@
         align-items: center;
         display: flex;
         margin-top: $r2;
+        margin-left: 15.5px;
+        margin-right: 15.5px;
 
         p {
             cursor: default;
@@ -40,6 +44,7 @@
         p, a {
             color: $bg;
             font-size: $small;
+            line-height: $small;
         }
 
         span {

@@ -14,5 +14,5 @@
 
     </div>
 
-<div class="reve-footer-lucidite"><span class="button-round-corner button-medium">Lucidité Tacite</span></div>
+<div class="reve-footer-lucidite"><span class="button-round-corner button-no-hover button-medium">Lucidité Tacite</span></div>
 </div>

@@ -4,3 +4,4 @@ import 'lazysizes/plugins/unveilhooks/ls.unveilhooks';
 import './components/header';
 import './components/bandeaux';
 import './components/liste-reves';
+import './components/apropos';

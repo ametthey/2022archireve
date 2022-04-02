@@ -1,0 +1,99 @@
+.apropos-explication {
+    margin-top: $r8;
+    margin-bottom: $r8;
+}
+
+/*****************************************************************************
+ * Element
+*****************************************************************************/
+.explication-toggle-item {
+    width: 60%;
+    margin-bottom: 0;
+}
+
+.explication-toggle-item {
+    &:nth-of-type(1) {
+        .explication-toggle-item-header {
+            span {
+                border-top: $b1 solid $bg;
+            }
+        }
+    }
+    &:nth-of-type(6) {
+        .explication-toggle-item-header {
+            span {
+                border-top: $b1 solid $bg;
+            }
+        }
+    }
+}
+
+/*****************************************************************************
+ * Title
+*****************************************************************************/
+.explication-toggle-item-header {
+    cursor: pointer;
+    display: flex;
+    width: 100%;
+
+    span {
+        display: inline-block;
+        padding: $r4;
+        font-size: $h3;
+        border-bottom: $b1 solid $bg;
+        height: 100px;
+        line-height: 1.4;
+
+        &:nth-of-type(1) {
+            font-size: $h2;
+            font-family: $covik;
+            border-right: $b1 solid $bg;
+            border-left: $b1 solid $bg;
+            width: 10%;
+            text-align: center;
+
+            &.gg {
+                font-family: $good;
+            }
+        }
+
+        &:nth-of-type(2) {
+            font-family: $solid;
+            border-right: $b1 solid $bg;
+            width: 90%;
+            text-align: left;
+        }
+    }
+}
+
+
+/*****************************************************************************
+ * Contenu
+*****************************************************************************/
+.explication-toggle-item-content {
+    border-bottom: $b1 solid $bg;
+    border-left: $b1 solid $bg;
+    border-right: $b1 solid $bg;
+    height: 120%;
+    max-height: 0;
+    overflow: hidden;
+    transition: $transition;
+    width: 100%;
+
+    .explication-wrapper-content {
+        padding: $r4 $r4 $r4 11%;
+        font-family: $covik;
+        font-size: $h4;
+    }
+}
+
+/*****************************************************************************
+ * Texte Après le 1er Tableau
+*****************************************************************************/
+.explication-tableau-1-texte {
+    margin: $r8 0 $r16 0;
+    font-family: $covik;
+    font-size: $h2;
+    text-transform: uppercase;
+    width: 60%;
+}

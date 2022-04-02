@@ -69,7 +69,6 @@
     transition: $transition2;
     width:  50px;
     display: flex;
-    background-color: $color;
     color: $bg;
     position: relative;
 
@@ -77,6 +76,10 @@
         width: calc( 100% - 100px );
 
         #close-white {
+            display: block;
+        }
+
+        .apropos-container {
             display: block;
         }
     }

@@ -1,0 +1,34 @@
+#container-apropos {
+    background-color: $color;
+    transition: $transition2;
+
+    &.is-fading {
+        background-color: $violet;
+    }
+}
+
+.apropos-container {
+    display: none;
+    overflow: auto;
+}
+
+.apropos-section {
+    width: calc( 100% - 50px );
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & > * {
+        margin-bottom: $r8;
+    }
+
+    h2 {
+        font-weight: normal;
+        width: 60%;
+        line-height: 1.6;
+    }
+}
+
+.char {
+    transition: $transition;
+}

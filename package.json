@@ -7,7 +7,9 @@
         "lib": "lib"
     },
     "dependencies": {
-        "lazysizes": "^5.3.2"
+        "lazysizes": "^5.3.2",
+        "lottie-web": "^5.9.1",
+        "splitting": "^1.0.6"
     },
     "devDependencies": {
         "@babel/core": "^7.16.7",

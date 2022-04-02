@@ -42,12 +42,27 @@ function cysp_acf_json_load_point( $paths ) {
 /***********************************************************************
  * Options Fields
  ***********************************************************************/
+
+// CREDITS
 if ( function_exists( 'acf_add_options_page' ) ) {
 
 	acf_add_options_page( array(
 		'page_title'	=> 'Credits',
 		'menu_title'	=> 'Credits',
 		'menu_slug' 	=> 'acf-credits',
+		'capability'	=> 'edit_posts',
+		'redirect'		=> false,
+	));
+
+}
+
+// A PROPOS
+if ( function_exists( 'acf_add_options_page' ) ) {
+
+	acf_add_options_page( array(
+		'page_title'	=> 'A Propos',
+		'menu_title'	=> 'A Propos',
+		'menu_slug' 	=> 'acf-a-propos',
 		'capability'	=> 'edit_posts',
 		'redirect'		=> false,
 	));

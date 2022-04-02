@@ -11,6 +11,12 @@
         </div>
     </div>
 
+    <div class="apropos-container">
+        <?php get_template_part( 'template-parts/home/apropos/apropos-hero' ); ?>
+        <?php get_template_part( 'template-parts/home/apropos/apropos-explication' ); ?>
+        <?php get_template_part( 'template-parts/home/apropos/apropos-footer' ); ?>
+    </div>
+
     <?php get_template_part( 'template-parts/elements/close-white' ); ?>
 
 </div>

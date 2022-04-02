@@ -10,8 +10,7 @@
     padding: $r4;
     position: fixed;
     width: calc(100% - 100px);
-    // transform: translateY(100%);
-    transform: translateY(0%);
+    transform: translateY(100%);
     transition: $transition;
 
     @include respond(tablet) {

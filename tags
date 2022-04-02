@@ -1182,7 +1182,9 @@ active	includes/acf/includes/admin/admin-tools.php	/^		var $active = '';$/;"	v
 active	includes/acf/includes/fields/class-acf-field-true_false.php	/^			$active = $field['value'] ? true : false;$/;"	v
 active	includes/acf/pro/admin/views/html-settings-updates.php	/^$active   = $license ? true : false;$/;"	v
 active	includes/acf/pro/fields/class-acf-field-flexible-content.php	/^			$active = get_row_layout();$/;"	v
+activeElements	src/assets/js/components/apropos.js	/^            const activeElements = Array.from(document.querySelectorAll('.toggle-open'));$/;"	V
 activeElements	src/assets/js/components/liste-reves.js	/^            const activeElements = Array.from(document.querySelectorAll('.open'));$/;"	V
+activeText	src/assets/js/components/apropos.js	/^                const activeText = activeElement.classList.contains('explication-toggle-item-content');$/;"	V
 activeText	src/assets/js/components/liste-reves.js	/^                const activeText = activeElement.classList.contains('reve-item-content');$/;"	V
 active_loop	includes/acf/includes/api/api-template.php	/^				$active_loop = $prev_loop;$/;"	v
 active_loop	includes/acf/includes/api/api-template.php	/^		$active_loop = acf_add_loop( $args );$/;"	v
@@ -1192,6 +1194,7 @@ active_plugins	includes/acf/acf.php	/^				$active_plugins = (array) get_site_opt
 active_plugins	includes/acf/acf.php	/^				$active_plugins = array_keys( $active_plugins );$/;"	v
 actualTrigger	includes/acf/assets/inc/select2/4/select2.full.js	/^					var actualTrigger = Select2.__super__.trigger;$/;"	V
 actualTrigger	includes/acf/assets/inc/select2/4/select2.js	/^					var actualTrigger = Select2.__super__.trigger;$/;"	V
+actualite	src/assets/js/components/apropos.js	/^const actualite =  '#99BA22';$/;"	V
 adaptContainerCssClass	includes/acf/assets/inc/select2/3/select2.js	/^		adaptContainerCssClass: function ( c ) {$/;"	M
 adaptContainerCssClass	includes/acf/assets/inc/select2/3/select2.min.js	/^					adaptContainerCssClass: function ( a ) {$/;"	M
 adaptDropdownCssClass	includes/acf/assets/inc/select2/3/select2.js	/^		adaptDropdownCssClass: function ( c ) {$/;"	M
@@ -1420,6 +1423,9 @@ append	includes/acf/includes/class-acf-data.php	/^		function append( $value = nu
 append	includes/acf/includes/revisions.php	/^				$append = acf_add_array_key_prefix( $append, $prefix );$/;"	v
 append	includes/acf/includes/revisions.php	/^				$append = acf_remove_array_key_prefix( $append, $prefix );$/;"	v
 append	includes/acf/includes/revisions.php	/^			$append  = array();$/;"	v
+aproposContainer	src/assets/js/components/apropos.js	/^const aproposContainer = document.querySelector('.apropos-container');$/;"	V
+aproposLogoAnimation	src/assets/js/components/apropos.js	/^function aproposLogoAnimation() {$/;"	F
+aproposMainContainer	src/assets/js/components/apropos.js	/^const aproposMainContainer = document.querySelector('#container-apropos');$/;"	V
 aps	includes/acf/assets/inc/select2/4/select2.full.js	/^						aps = [].slice,$/;"	P
 aps	includes/acf/assets/inc/select2/4/select2.js	/^						aps = [].slice,$/;"	P
 arg	includes/acf/includes/api/api-helpers.php	/^				$arg = $arg ? 'true' : 'false';$/;"	v
@@ -1621,6 +1627,7 @@ autofocus	includes/acf/assets/inc/select2/3/select2.js	/^			this.autofocus = opt
 autoload	includes/acf/includes/acf-meta-functions.php	/^		$autoload = (bool) acf_get_setting( 'autoload' );$/;"	v
 autoload	includes/acf/includes/deprecated.php	/^		$autoload = (bool) acf_get_setting( 'autoload' );$/;"	v
 autoload	includes/acf/includes/deprecated.php	/^	if ( $autoload === null ) {$/;"	v
+autoplay	src/assets/js/components/apropos.js	/^        autoplay: true,$/;"	P
 b	includes/acf/assets/inc/select2/3/select2.min.js	/^														var b = {$/;"	O
 b	includes/acf/assets/inc/select2/3/select2.min.js	/^									var b = c.results( a, i.page, i );$/;"	V
 b	includes/acf/assets/inc/select2/3/select2.min.js	/^							b = ! a;$/;"	P
@@ -1708,6 +1715,7 @@ body	includes/acf/assets/inc/select2/3/select2.js	/^			this.body = $( document.b
 body	src/assets/js/component/header.js	/^const body = document.body;$/;"	V
 body	src/assets/js/component/reservation.js	/^const body = document.body;$/;"	V
 bodyOffset	includes/acf/assets/inc/select2/3/select2.js	/^				bodyOffset = this.body.offset();$/;"	P
+bonheur	src/assets/js/components/apropos.js	/^const bonheur = '#1C0C5B';$/;"	V
 borderCollapse	includes/acf/assets/inc/timepicker/jquery-ui-timepicker-addon.js	/^								borderCollapse: 'collapse',$/;"	P
 bottom	includes/acf/assets/inc/select2/4/select2.full.js	/^						bottom: $window.scrollTop() + $window.height(),$/;"	P
 bottom	includes/acf/assets/inc/select2/4/select2.js	/^						bottom: $window.scrollTop() + $window.height(),$/;"	P
@@ -1891,6 +1899,7 @@ category	includes/acf/pro/fields/class-acf-field-gallery.php	/^			$this->categor
 category	includes/acf/pro/fields/class-acf-field-repeater.php	/^			$this->category = 'layout';$/;"	v
 category	includes/acf/pro/locations/class-acf-location-block.php	/^			$this->category    = 'forms';$/;"	v
 category	includes/acf/pro/locations/class-acf-location-options-page.php	/^			$this->category    = 'forms';$/;"	v
+cauchemar	src/assets/js/components/apropos.js	/^const cauchemar =  '#6755AA';$/;"	V
 centeredSlides	src/assets/js/component/carousel.js	/^        centeredSlides: true,$/;"	P
 change	includes/acf/assets/inc/color-picker-alpha/wp-color-picker-alpha.js	/^				change: function ( event, ui ) {$/;"	M
 change	includes/acf/assets/inc/color-picker-alpha/wp-color-picker-alpha.min.js	/^						change: function ( o, a ) {$/;"	M
@@ -1908,6 +1917,7 @@ changelog	includes/acf/pro/admin/admin-updates.php	/^		function get_changelog_ch
 chars	includes/acf/assets/inc/select2/4/select2.full.js	/^				var chars = '';$/;"	V
 chars	includes/acf/assets/inc/select2/4/select2.js	/^				var chars = '';$/;"	V
 chars	includes/acf/includes/api/api-helpers.php	/^	$chars    = str_split( $date_time );$/;"	v
+chars	src/assets/js/components/apropos.js	/^    const chars = coloredHover.querySelectorAll('.char');$/;"	V
 check	includes/acf/includes/acf-value-functions.php	/^	$check = apply_filters( 'acf\/pre_format_value', null, $value, $post_id, $field );$/;"	v
 check	includes/acf/includes/acf-value-functions.php	/^	$check = apply_filters( 'acf\/pre_update_value', null, $value, $post_id, $field );$/;"	v
 checkClasses	src/assets/js/component/header.js	/^function checkClasses() {$/;"	F
@@ -2093,6 +2103,8 @@ color	includes/acf/assets/inc/color-picker-alpha/wp-color-picker-alpha.js	/^			c
 color	includes/acf/assets/inc/color-picker-alpha/wp-color-picker-alpha.js	/^		color: function ( newColor ) {$/;"	M
 color	includes/acf/assets/inc/color-picker-alpha/wp-color-picker-alpha.js	/^		var color = '';$/;"	V
 color	includes/acf/assets/inc/color-picker-alpha/wp-color-picker-alpha.min.js	/^			color: function ( o ) {$/;"	M
+coloredHovers	src/assets/js/components/apropos.js	/^const coloredHovers = document.querySelectorAll('.apropos-section h2');$/;"	V
+colors	src/assets/js/components/apropos.js	/^const colors = [ cauchemar, concomitant, creatif, actualite, recurrent, sexuel, premonitoire, lucide, bonheur ];$/;"	A
 column_label	includes/acf/includes/admin/admin-field-groups.php	/^						$column_label = '';$/;"	v
 column_name	includes/acf/includes/admin/admin-field-groups.php	/^					if ( $column_name === 'cb' ) {$/;"	v
 column_name	includes/acf/includes/admin/admin-field-groups.php	/^					} elseif ( $column_name === 'title' ) {$/;"	v
@@ -2110,6 +2122,7 @@ compress	gulpfile.babel.js	/^export const bundle = gulp.series(build, compress);
 compress	gulpfile.babel.js	/^export const compress = () => {$/;"	E
 computeEffectiveSetting	includes/acf/assets/inc/timepicker/jquery-ui-timepicker-addon.js	/^	var computeEffectiveSetting = function ( settings, property ) {$/;"	F
 concatValues	src/assets/js/component/filter-isotope.js	/^    function concatValues( obj ) {$/;"	F
+concomitant	src/assets/js/components/apropos.js	/^const concomitant =  '#2CAF38';$/;"	V
 config	includes/acf/assets/inc/select2/4/select2.full.js	/^								config: makeConfig( name ),$/;"	P
 config	includes/acf/assets/inc/select2/4/select2.full.js	/^							config = deps;$/;"	P
 config	includes/acf/assets/inc/select2/4/select2.full.js	/^						config = {},$/;"	P
@@ -2129,6 +2142,7 @@ container	includes/acf/assets/inc/select2/4/select2.full.js	/^					this.containe
 container	includes/acf/assets/inc/select2/4/select2.full.js	/^					var container = {$/;"	O
 container	includes/acf/assets/inc/select2/4/select2.js	/^					this.container = container;$/;"	P
 container	includes/acf/assets/inc/select2/4/select2.js	/^					var container = {$/;"	O
+container	src/assets/js/components/apropos.js	/^        container: document.querySelector('.apropos-hero-title') ,$/;"	P
 containerCss	includes/acf/assets/inc/select2/3/select2.js	/^		containerCss: {},$/;"	P
 containerCss	includes/acf/assets/inc/select2/3/select2.min.js	/^					containerCss: {},$/;"	P
 containerCss	includes/acf/assets/inc/select2/4/select2.full.js	/^						containerCss = containerCss( this.$element );$/;"	P
@@ -2148,6 +2162,7 @@ content	includes/acf/pro/blocks.php	/^		$content = str_replace( '$', '\\$', $con
 content	includes/acf/pro/blocks.php	/^function acf_render_block( $attributes, $content = '', $is_preview = false, $post_id = 0, $wp_block = null, $context = false ) {$/;"	v
 content	includes/acf/pro/blocks.php	/^function acf_render_block_callback( $attributes, $content = '', $wp_block = null ) {$/;"	v
 content	includes/acf/pro/blocks.php	/^function acf_rendered_block( $attributes, $content = '', $is_preview = false, $post_id = 0, $wp_block = null, $context = false ) {$/;"	v
+content	src/assets/js/components/apropos.js	/^    const content = item.querySelector('.explication-toggle-item-content');$/;"	V
 content	src/assets/js/components/header.js	/^const content = document.querySelector('#header-mobile-apropos-content');$/;"	V
 content	src/assets/js/components/liste-reves.js	/^    const content = reve.querySelector('.reve-item-content');$/;"	V
 context	includes/acf/assets/inc/select2/3/select2.js	/^							context: null,$/;"	P
@@ -2231,6 +2246,7 @@ create_sommeil_ct	lib/lib/taxonomy-modalites.php	/^function create_sommeil_ct() 
 create_sommeil_ct	lib/taxonomy-modalites.php	/^function create_sommeil_ct() {$/;"	f
 create_typologie_ct	lib/custom-post-taxonomy.php	/^function create_typologie_ct() {$/;"	f
 creates	includes/acf/includes/third-party.php	/^		*  This function creates dummy metaboxes on the tabify edit screen page$/;"	f
+creatif	src/assets/js/components/apropos.js	/^const creatif =  '#F79D65';$/;"	V
 css	includes/acf/assets/inc/select2/3/select2.js	/^					css: element.attr( 'class' ),$/;"	P
 css	includes/acf/assets/inc/select2/3/select2.js	/^			css = $.extend($/;"	P
 css	includes/acf/assets/inc/select2/3/select2.min.js	/^									css: a.attr( 'class' ),$/;"	P
@@ -3811,6 +3827,7 @@ h	includes/acf/assets/inc/select2/4/select2.min.js	/^					h = t && t.split( '\/'
 h	includes/acf/assets/inc/timepicker/jquery-ui-timepicker-addon.js	/^									h = $t.html(),$/;"	P
 h	includes/acf/assets/inc/timepicker/jquery-ui-timepicker-addon.js	/^						h: -1,$/;"	P
 h4	includes/acf/includes/admin/views/field-group-field-conditional-logic.php	/^				$h4       = ( $group_id == 'group_0' ) ? __( 'Show this field if', 'acf' ) : __( 'or', 'acf' );$/;"	v
+half	src/assets/js/components/apropos.js	/^    const half = aproposContainer.scrollHeight \/ 2;$/;"	V
 hamburger	src/assets/js/component/header.js	/^const hamburger = document.querySelector('.hamburger');$/;"	V
 handle	includes/acf/pro/blocks.php	/^	$handle = 'block-' . acf_slugify( $block_type['name'] );$/;"	v
 handle_redirection	includes/acf/includes/admin/admin-field-groups.php	/^		public function handle_redirection() {$/;"	f
@@ -3838,6 +3855,7 @@ haystack	includes/acf/includes/api/api-helpers.php	/^		$haystack = strtolower( $
 hb	includes/acf/assets/inc/select2/3/select2.js	/^					hb = more.offset().top + more.outerHeight( true );$/;"	P
 hb	includes/acf/assets/inc/select2/3/select2.js	/^			hb = topOffset + child.outerHeight( true );$/;"	P
 header	src/assets/js/component/header.js	/^const header = document.querySelector('header');$/;"	V
+header	src/assets/js/components/apropos.js	/^    const header = item.querySelector('.explication-toggle-item-header');$/;"	V
 header	src/assets/js/components/liste-reves.js	/^    const header = reve.querySelector('.reve-item-header');$/;"	V
 height	includes/acf/assets/inc/color-picker-alpha/wp-color-picker-alpha.js	/^				height: '100%',$/;"	P
 height	includes/acf/assets/inc/color-picker-alpha/wp-color-picker-alpha.min.js	/^						height: '100%',$/;"	P
@@ -5033,12 +5051,14 @@ loop	includes/acf/includes/loop.php	/^			$loop = wp_parse_args($/;"	v
 loop	includes/acf/includes/loop.php	/^		function add_loop( $loop = array() ) {$/;"	v
 loop	includes/acf/includes/loop.php	/^function acf_add_loop( $loop = array() ) {$/;"	v
 loop	src/assets/js/component/drawing-line.js	/^        loop: false$/;"	P
+loop	src/assets/js/components/apropos.js	/^        loop: true,$/;"	P
 loops	includes/acf/includes/loop.php	/^				$this->loops = array();$/;"	v
 loops	includes/acf/includes/loop.php	/^			$this->loops = array();$/;"	v
 loops	includes/acf/includes/loop.php	/^			$this->loops = array_values( $this->loops );$/;"	v
 looseParse	includes/acf/assets/inc/timepicker/jquery-ui-timepicker-addon.js	/^		var looseParse = function ( f, s, o ) {$/;"	F
 lowestDelta	includes/acf/assets/inc/select2/4/select2.full.js	/^					lowestDelta = absDelta;$/;"	P
 lowestDelta	includes/acf/assets/inc/select2/4/select2.full.js	/^				lowestDelta = null;$/;"	P
+lucide	src/assets/js/components/apropos.js	/^const lucide =  '#c12b2b';$/;"	V
 m	includes/acf/assets/inc/select2/3/select2.min.js	/^												m = 0, n = d.length;$/;"	P
 m	includes/acf/assets/inc/select2/3/select2.min.js	/^							m = h.scrollTop() + k,$/;"	P
 m	includes/acf/assets/inc/select2/3/select2.min.js	/^						function m() {$/;"	F
@@ -6204,6 +6224,7 @@ path	includes/acf/pro/blocks.php	/^			$path = $block['render_template'];$/;"	v
 path	includes/acf/pro/blocks.php	/^			$path = locate_template( $block['render_template'] );$/;"	v
 path	lib/acf.php	/^        $path = get_stylesheet_directory() . '\/acf-json' ;$/;"	v
 path	lib/acf.php	/^        $path = get_stylesheet_directory_uri() . '\/includes\/acf\/' ;$/;"	v
+path	src/assets/js/components/apropos.js	/^        path: '\/wp-content\/themes\/_themename\/dist\/assets\/images\/apropos\/logo-1line-white.json',$/;"	P
 paths	includes/acf/includes/local-json.php	/^			$paths = (array) acf_get_setting( 'load_json' );$/;"	v
 per_page	includes/acf/includes/ajax/class-acf-ajax-query-users.php	/^				$this->per_page = intval( $args['number'] );$/;"	v
 per_page	includes/acf/includes/ajax/class-acf-ajax-query-users.php	/^				$this->per_page = intval( $args['users_per_page'] );$/;"	v
@@ -6265,6 +6286,7 @@ position	includes/acf/assets/inc/select2/4/select2.full.js	/^						position: 'ab
 position	includes/acf/assets/inc/select2/4/select2.js	/^						position: 'absolute',$/;"	P
 position	includes/acf/assets/inc/select2/4/select2.min.js	/^										position: 'absolute',$/;"	P
 position	includes/acf/includes/upgrades.php	/^	if ( $position = get_post_meta( $ofg->ID, 'position', true ) ) {$/;"	v
+position	src/assets/js/components/apropos.js	/^    const position = aproposContainer.scrollTop;$/;"	V
 positionDropdown	includes/acf/assets/inc/select2/3/select2.js	/^		positionDropdown: function () {$/;"	M
 positionDropdown	includes/acf/assets/inc/select2/3/select2.min.js	/^					positionDropdown: function () {$/;"	M
 post	includes/acf/includes/acf-field-functions.php	/^	$post = acf_get_field_post( $id );$/;"	v
@@ -6540,6 +6562,7 @@ prefix	includes/acf/pro/fields/class-acf-field-gallery.php	/^				$prefix = 'atta
 preg_replace	includes/acf/includes/admin/tools/class-acf-admin-tool-export.php	/^			$preg_replace = array($/;"	v
 preload	includes/acf/includes/api/api-helpers.php	/^	$preload = apply_filters( 'acf\/pre_load_post_id', null, $post_id );$/;"	v
 preloaded_blocks	includes/acf/pro/blocks.php	/^		$preloaded_blocks = acf_get_store( 'block-cache' )->get_data();$/;"	v
+premonitoire	src/assets/js/components/apropos.js	/^const premonitoire =  '#4CA58E';$/;"	V
 prepareOpts	includes/acf/assets/inc/select2/3/select2.js	/^		prepareOpts: function ( opts ) {$/;"	M
 prepareOpts	includes/acf/assets/inc/select2/3/select2.js	/^		prepareOpts: function () {$/;"	M
 prepareOpts	includes/acf/assets/inc/select2/3/select2.min.js	/^					prepareOpts: function ( c ) {$/;"	M
@@ -6598,6 +6621,7 @@ process	includes/acf/assets/inc/select2/3/select2.js	/^					process = function (
 process	includes/acf/assets/inc/select2/3/select2.js	/^			process = function ( datum, collection ) {$/;"	M
 processResults	includes/acf/assets/inc/select2/4/select2.full.js	/^						this.processResults = this.ajaxOptions.processResults;$/;"	P
 processResults	includes/acf/assets/inc/select2/4/select2.js	/^						this.processResults = this.ajaxOptions.processResults;$/;"	P
+progressiveLoad	src/assets/js/components/apropos.js	/^        progressiveLoad: true,$/;"	P
 prop	includes/acf/includes/class-acf-data.php	/^		function prop( $name = '', $value = null ) {$/;"	f
 properties	includes/acf/includes/rest-api/class-acf-rest-request.php	/^	 * Define which private\/protected class properties are allowed read access. Access to these is controlled in$/;"	c
 propertyMethods	includes/acf/assets/inc/select2/3/select2.js	/^			propertyMethods = [ 'val', 'data' ],$/;"	P
@@ -6703,6 +6727,7 @@ readonly	includes/acf/assets/inc/select2/3/select2.js	/^		readonly: function ( e
 readonly	includes/acf/assets/inc/select2/3/select2.min.js	/^					readonly: function ( a ) {$/;"	M
 readonly	includes/acf/pro/admin/views/html-settings-updates.php	/^$readonly = $active ? 1 : 0;$/;"	v
 readonly_props	includes/acf/includes/rest-api/class-acf-rest-request.php	/^	private $readonly_props = array( 'object_type', 'object_sub_type', 'child_object_type', 'http_method' );$/;"	v
+recurrent	src/assets/js/components/apropos.js	/^const recurrent =  '#DB5931';$/;"	V
 redirect	includes/acf/includes/admin/tools/class-acf-admin-tool.php	/^		\/\/ var $redirect = false;$/;"	v
 ref	includes/acf/includes/api/api-helpers.php	/^	$ref = array();$/;"	v
 ref	includes/acf/includes/api/api-term.php	/^	$ref  = array();$/;"	v
@@ -6855,6 +6880,7 @@ render_layout	includes/acf/pro/fields/class-acf-field-flexible-content.php	/^		f
 render_meta_box	includes/acf/includes/forms/form-post.php	/^		function render_meta_box( $post, $metabox ) {$/;"	f
 render_new	includes/acf/includes/forms/form-user.php	/^		function render_new() {$/;"	f
 render_register	includes/acf/includes/forms/form-user.php	/^		function render_register() {$/;"	f
+renderer	src/assets/js/components/apropos.js	/^        renderer: 'svg',$/;"	P
 repeat	src/assets/js/component/marquee.js	/^        repeat: -1,$/;"	P
 replace	includes/acf/includes/compatibility.php	/^			$replace = array($/;"	v
 replaceAll	src/assets/js/component/filter-isotope.js	/^function replaceAll(str, find, replace) {$/;"	F
@@ -7305,6 +7331,7 @@ setTimeout	includes/acf/assets/inc/select2/4/select2.full.js	/^							setTimeout
 setTimeout	includes/acf/assets/inc/select2/4/select2.js	/^							setTimeout( function () {$/;"	M
 setTimeout	includes/acf/assets/inc/timepicker/jquery-ui-timepicker-addon.js	/^					setTimeout( function () {$/;"	M
 setTimeout	src/assets/js/component/loading-top-page.js	/^setTimeout( function() {$/;"	M
+setTimeout	src/assets/js/components/apropos.js	/^            setTimeout( function() {$/;"	M
 setVal	includes/acf/assets/inc/select2/3/select2.js	/^		setVal: function ( val ) {$/;"	M
 setVal	includes/acf/assets/inc/select2/3/select2.min.js	/^					setVal: function ( b ) {$/;"	M
 set_current_route	includes/acf/includes/rest-api/class-acf-rest-request.php	/^	private function set_current_route( $request ) {$/;"	f
@@ -7328,6 +7355,7 @@ settings_save_json	includes/acf/includes/wpml.php	/^		function settings_save_jso
 setup	includes/acf/assets/inc/select2/4/select2.full.js	/^				setup: function () {$/;"	M
 setup_help_tab	includes/acf/includes/admin/admin.php	/^		public function setup_help_tab() {$/;"	f
 setup_sync	includes/acf/includes/admin/admin-field-groups.php	/^		public function setup_sync() {$/;"	f
+sexuel	src/assets/js/components/apropos.js	/^const sexuel =  '#D67083';$/;"	V
 should	includes/acf/includes/assets.php	/^					_doing_it_wrong( __FUNCTION__, 'The ACF_Assets class should not be accessed directly.', '5.9.0' );$/;"	c
 should	includes/acf/includes/legacy/legacy-locations.php	/^			\/\/ _doing_it_wrong( __FUNCTION__, __( 'The ACF_Locations class should not be accessed directly.', 'acf' ), '5.9.0' );$/;"	c
 shouldAdjustOldDeltas	includes/acf/assets/inc/select2/4/select2.full.js	/^			function shouldAdjustOldDeltas( orgEvent, absDelta ) {$/;"	F
@@ -7729,6 +7757,7 @@ tags	includes/acf/assets/inc/select2/3/select2.js	/^	function tags( data ) {$/;"
 tags	includes/acf/assets/inc/select2/4/select2.full.js	/^				var tags = options.get( 'tags' );$/;"	V
 tags	includes/acf/assets/inc/select2/4/select2.js	/^				var tags = options.get( 'tags' );$/;"	V
 target	includes/acf/assets/inc/color-picker-alpha/wp-color-picker-alpha.js	/^					target = self.picker$/;"	P
+target	src/assets/js/components/apropos.js	/^const target = document.querySelectorAll('.apropos-section h2');$/;"	V
 targets	src/assets/js/component/drawing-line.js	/^        targets: selector,$/;"	P
 taxonomies	includes/acf/includes/api/api-helpers.php	/^	$taxonomies = acf_get_array( $taxonomies );$/;"	v
 taxonomies	includes/acf/includes/api/api-helpers.php	/^	$taxonomies = acf_get_pretty_taxonomies( $taxonomies );$/;"	v
@@ -7918,6 +7947,7 @@ textarea	includes/acf/includes/fields/class-acf-field-wysiwyg.php	/^			$textarea
 textdomain	includes/acf/includes/api/api-helpers.php	/^	$textdomain = acf_get_setting( 'l10n_textdomain' );$/;"	v
 that	includes/acf/assets/inc/select2/3/select2.js	/^			var that = this;$/;"	V
 that	includes/acf/includes/acf-value-functions.php	/^ * @param string $function The function that noticed the problem.$/;"	f
+theActiveText	src/assets/js/components/apropos.js	/^                    const theActiveText = activeElement;$/;"	V
 theActiveText	src/assets/js/components/liste-reves.js	/^                    const theActiveText = activeElement;$/;"	V
 theContainer	src/assets/js/effect/text-reveal.js	/^    const theContainer = document.querySelector('.container-home-center-zero');$/;"	V
 theContainer	src/assets/js/effect/text-reveal.js	/^    const theContainer = document.querySelectorAll('.container-split-center');$/;"	V
@@ -8075,6 +8105,7 @@ toggleActions	src/assets/js/effect/text-reveal.js	/^                toggleAction
 toggleActions	src/assets/js/effect/text-reveal.js	/^                toggleActions: 'play none none none',$/;"	P
 toggleActions	src/assets/js/effect/text-reveal.js	/^            toggleActions: 'play none none none',$/;"	P
 toggleFilters	src/assets/js/component/filter-isotope.js	/^function toggleFilters() {$/;"	F
+toggleItems	src/assets/js/components/apropos.js	/^const toggleItems = document.querySelectorAll('.explication-toggle-item');$/;"	V
 token	includes/acf/assets/inc/select2/3/select2.js	/^				token = opts.createSearchChoice.call( this, token, selection );$/;"	P
 token	includes/acf/assets/inc/select2/3/select2.js	/^			token = input.substring( 0, index );$/;"	P
 tokenSeparators	includes/acf/assets/inc/select2/3/select2.js	/^		tokenSeparators: [],$/;"	P
