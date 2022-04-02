@@ -1,11 +1,11 @@
 .reve-item {
-    border: $b2 solid $color;
     background-color: $bg;
-    height: auto;
-    width: 90%;
-    margin-bottom: $r4;
+    border: $b2 solid $color;
     display: flex;
     flex-direction: column;
+    height: auto;
+    margin-bottom: $r4;
+    width: 90%;
 }
 
 /***********************************************************************
@@ -72,17 +72,52 @@
 }
 
 .reve-item-header-selection {
-    width: $r6;
+    align-items: center;
     border-left: $b2 solid $color;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: space-around;
+    width: $r6;
 }
 
 /***********************************************************************
  * REVE CONTENT
  ***********************************************************************/
+.reve-item-content {
+    // display: flex;
+    margin: auto;
+    max-height: 0;
+    overflow: hidden;
+    transition: $transition2;
+    width: 90%;
+
+    @include respond(tablet) {
+        // flex-direction: column;
+    }
+
+    p {
+        font-size: $h4;
+        width: 55%;
+
+        @include respond(tablet) {
+            font-size: $h6;
+            width: 100%;
+        }
+    }
+
+    img {
+        height: 35%;
+        margin: auto;
+        object-fit: contain;
+        width: 35%;
+
+        @include respond(tablet) {
+            height: 70%;
+            width: 70%;
+        }
+    }
+}
+
 /***********************************************************************
  * REVE FOOTER
  ***********************************************************************/
@@ -93,6 +128,10 @@
 
     @include respond(tablet) {
         height: $r5;
+    }
+
+    &.open {
+        border-top: $b1 solid $color;
     }
 }
 
@@ -136,6 +175,10 @@
     display: grid;
     place-items: center;
     width: 25%;
+
+    @include respond(md) {
+        width: 35%;
+    }
 
     @include respond(tablet) {
         width: 40%;

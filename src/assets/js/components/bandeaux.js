@@ -20,7 +20,6 @@ bandeaux.forEach( bandeau => {
 
         else if ( bandeau.id == 'container-apropos' ) {
             const bandeauOpen = bandeau;
-            console.log( 'apropos' );
             bandeauOpen.classList.add('open');
             bandeauReves.classList.add('closed');
         }

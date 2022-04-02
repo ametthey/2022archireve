@@ -11,8 +11,8 @@
 
         @include respond(tablet) {
             margin-bottom: $r2;
-            margin-left: 6px;
-            margin-right: 6px;
+            margin-left: $rs;
+            margin-right: $rs;
         }
     }
 }

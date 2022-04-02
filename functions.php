@@ -26,15 +26,16 @@ require_once( 'lib/enqueue-assets.php' );
 require_once( 'lib/login-customization.php' );
 
 /***********************************************************************
- * Custom Post Type : événement
+ * Custom Post Type : Reves & Reveurs
  ***********************************************************************/
 require_once( 'lib/custom-post-type.php' );
 
 
 /***********************************************************************
- * Custom Post Taxonomy : catégorie
+ * Custom Post Taxonomy : Niveau de lucidité, Typologie & Tags
  ***********************************************************************/
 require_once( 'lib/custom-post-taxonomy.php' );
+require_once( 'lib/taxonomy-modalites.php' );
 
 
 /***********************************************************************

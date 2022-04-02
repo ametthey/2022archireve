@@ -13,7 +13,7 @@
 #container-filtres {
     border-right: 1px solid $color;
     height: inherit;
-    transition: $transition;
+    transition: $transition2;
     position: relative;
     width:  50px;
 
@@ -35,7 +35,7 @@
  * CONTAINER REVES
  ***********************************************************************/
 #container-reves {
-    transition: $transition;
+    transition: $transition2;
     overflow: auto;
     width:  calc( 100% - 100px );
 
@@ -62,7 +62,7 @@
  ***********************************************************************/
 #container-apropos {
     border-left: 1px solid $color;
-    transition: $transition;
+    transition: $transition2;
     width:  50px;
     display: flex;
     background-color: $color;

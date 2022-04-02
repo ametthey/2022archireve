@@ -26,13 +26,14 @@ $h2: 26px;
 $h3: 22px;
 $h4: 20px;
 $h5: 16px;
+$h6: 14px;
 
 
 $b1: 1px;
 $b2: 1px;
 
 $rss: 2px;
-$rs: 4px;
+$rs: 6px;
 $r: 8px;
 $r2: calc( #{$r} * 2 );
 $r3: calc( #{$r} * 3 );
@@ -67,8 +68,10 @@ $r30: calc( #{$r} * 30 );
 
 // Animations / Transitions
 $duration: 0.25s;
+$duration2: 0.5s;
 $delay: 0.0s;
 $easing: ease;
 
 $transition: all $duration $delay $easing;
+$transition2: all $duration2 $delay $easing;
 
