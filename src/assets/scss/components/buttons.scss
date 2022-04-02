@@ -31,6 +31,10 @@
 
     &.button-round-circle-white {
         background-color: $bg;
+
+        &:hover {
+            background-color: $color;
+        }
     }
 }
 

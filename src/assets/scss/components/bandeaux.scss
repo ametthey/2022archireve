@@ -2,7 +2,10 @@
  * COVER
  ***********************************************************************/
 .container-cover {
+    align-items: center;
+    display: flex;
     transform: rotate(-180deg);
+    width: 100%;
     writing-mode: vertical-rl;
 
     .container-cover-title {
@@ -11,8 +14,6 @@
 
         @include respond(tablet) {
             margin-bottom: $r2;
-            margin-left: $rs;
-            margin-right: $rs;
         }
     }
 }

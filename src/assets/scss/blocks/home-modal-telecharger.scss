@@ -1,0 +1,42 @@
+.modal-telecharger-reves {
+    align-items: center;
+    background-color: $bg;
+    border-top: $b1 solid $color;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    justify-content: space-around;
+    padding: $r4;
+    position: fixed;
+    width: calc(100% - 100px);
+    // transform: translateY(100%);
+    transform: translateY(0%);
+    transition: $transition;
+
+    @include respond(tablet) {
+        width: calc( 100% - 36px ); // filtres width 36px
+    }
+
+    // A UTILISER
+    &.open {
+        transform: translateY(0);
+    }
+}
+
+#modal-telecharger-button {
+}
+
+.modal-tout-selectionner {
+    align-items: center;
+    display: flex;
+    gap: $r;
+}
+
+.modal-telecharger-reves {
+    #close-black {
+        display: block;
+        top: $r2;
+        right: $r2;
+    }
+}

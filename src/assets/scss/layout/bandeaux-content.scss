@@ -20,6 +20,10 @@
     &.open {
         width: 450px;
 
+        .container-cover {
+            display: none;
+        }
+
         #close-black {
             display: block;
         }

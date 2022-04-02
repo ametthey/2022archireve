@@ -84,7 +84,7 @@
  * REVE CONTENT
  ***********************************************************************/
 .reve-item-content {
-    // display: flex;
+    display: inline-block;
     margin: auto;
     max-height: 0;
     overflow: hidden;
@@ -92,10 +92,11 @@
     width: 90%;
 
     @include respond(tablet) {
-        // flex-direction: column;
+        display: block;
     }
 
     p {
+        float: left;
         font-size: $h4;
         width: 55%;
 
@@ -106,10 +107,10 @@
     }
 
     img {
-        height: 35%;
+        height: 45%;
         margin: auto;
-        object-fit: contain;
-        width: 35%;
+        object-fit: cover;
+        width: 30%;
 
         @include respond(tablet) {
             height: 70%;

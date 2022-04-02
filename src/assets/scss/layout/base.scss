@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
     scrollbar-width: none;
 
     &::-webkit-scrollbar {
@@ -13,4 +15,13 @@
     & :after {
         box-sizing: border-box;
     }
+}
+
+body {
+    min-height: 100vh;
+}
+
+html,
+body {
+    min-height: -webkit-fill-available;
 }

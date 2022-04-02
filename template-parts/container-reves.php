@@ -18,5 +18,8 @@
         </div>
         <?php } ?>
 
+
+        <!-- MODAL POUR TELECHARGER LES REVES -->
+        <?php get_template_part( 'template-parts/home/reves/reve-telecharger' ); ?>
     </div>
 </div>
