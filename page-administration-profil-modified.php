@@ -1,9 +1,11 @@
 <?php
 /*
- * Template Name: administration
+ * Template Name: administration profil modified
  */
 ?>
 <?php get_header(); ?>
+
+<?php get_template_part( 'template-parts/administration/profil-submitted' ); ?>
 
 <div class="container-user-menu">
 

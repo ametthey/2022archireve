@@ -7,4 +7,4 @@ import './components/liste-reves';
 import './components/apropos';
 import './components/profil';
 import './components/filtres';
-import './components/page-transition';
+import './components/log-in';

@@ -104,7 +104,7 @@ function _themename_create_reveur_cpt() {
         'has_archive' => false,
         'hierarchical' => false,
         'exclude_from_search' => false,
-        'show_in_rest' => false,
+        'show_in_rest' => true,
         'publicly_queryable' => true,
         'capability_type' => 'page',
     );

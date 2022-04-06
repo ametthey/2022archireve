@@ -4,8 +4,13 @@
  * Enqueue Styles and Scripts
  ***********************************************************************/
 function _themename_assets() {
+
+    if ( !is_user_logged_in() ) {
+        wp_enqueue_script( '_themename-scripts', get_stylesheet_directory_uri() . '/dist/assets/js/main.js',[] , filemtime( get_template_directory().'/dist/assets/js/main.js' ) ,   true );
+    } else if ( is_user_logged_in() ){
+        wp_enqueue_script( '_themename-scripts-log', get_stylesheet_directory_uri() . '/dist/assets/js/main-log.js',[] , filemtime( get_template_directory().'/dist/assets/js/main-log.js' ) ,   true );
+    }
     wp_enqueue_style( '_themename-stylesheet', get_stylesheet_directory_uri() . '/dist/assets/css/bundle.css', [], filemtime( get_template_directory().'/dist/assets/css/bundle.css' ) ,  'all' );
-    wp_enqueue_script( '_themename-scripts', get_stylesheet_directory_uri() . '/dist/assets/js/main.js',[] , filemtime( get_template_directory().'/dist/assets/js/main.js' ) ,   true );
 }
 add_action( 'wp_enqueue_scripts', '_themename_assets' );
 

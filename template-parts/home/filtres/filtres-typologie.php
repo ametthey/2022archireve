@@ -13,7 +13,7 @@
     foreach( $typologie_terms as $term ) {
         $img = '<img decoding="async" loading="lazy" class="lazyload" src="' . get_stylesheet_directory_uri() . '/dist/assets/images/typologie/' . $term->slug .'-noir.svg">';
 
-        echo '<button class="button-round-corner button-small hover-' . $term->slug . '" data-filter=".' . $term->slug .'" aria-hidden="true">'. $img  . $term->name . '</button>';
+        echo '<button class="filtres-button button-round-corner button-small hover-' . $term->slug . '" data-filter=".' . $term->slug .'" aria-hidden="true">'. $img  . $term->name . '</button>';
     }
     ?>
     </div>

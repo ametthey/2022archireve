@@ -92,11 +92,11 @@
 
 .glide__arrow {
     cursor: pointer;
-    img {
+    svg {
         height: 20px;
 
         @include respond(tablet) {
-            height: 40px;
+            height: 20px;
         }
     }
 }

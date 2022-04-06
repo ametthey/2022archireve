@@ -4,24 +4,24 @@
  *****************************************************************************/
 const ageContainer = document.querySelector('#item-age');
 const range = document.querySelector('#acf-field_624833e24aed0');
-const output = `<output id="age-output" for="acf[field_624833e24aed0]"></output>`;
 
 document.addEventListener( 'DOMContentLoaded', () => {
     if ( range ){
+        const output = `<output id="age-output" for="acf[field_624833e24aed0]"></output>`;
         range.insertAdjacentHTML( "afterend", output );
     }
 });
 
 
 window.addEventListener( 'load', () => {
-    const bubble = document.querySelector('#age-output');
 
     if ( range ) {
+        const bubble = document.querySelector('#age-output');
         createBubble(range, bubble);
     }
 });
 
-function createBubble() {
+function createBubble(range, bubble) {
     range.addEventListener("input", () => {
         setBubble(range, bubble);
     });

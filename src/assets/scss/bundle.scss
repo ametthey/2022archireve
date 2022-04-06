@@ -7,6 +7,7 @@
 @import 'core/fonts';
 @import 'core/typography';
 @import 'core/wordpress';
+@import 'core/helper';
 
 // COMPONENTS
 @import 'components/buttons';
@@ -48,6 +49,7 @@
 @import 'blocks/profil-foi';
 
 @import 'blocks/administration-nav';
+@import 'blocks/administration-profil-submitted';
 
 @import 'blocks/connexion-inscription';
 @import 'blocks/inscription/success-message';

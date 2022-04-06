@@ -11,6 +11,7 @@ $editor = current_user_can( 'editor' );
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="profile" href="https://gmpg.org/xfn/11" />
         <link rel="dns-prefetch" href="https://use.typekit.net">
+        <link rel="preload" href="https://use.typekit.net/gta0mfy.css" as="style">
         <link rel="stylesheet" href="https://use.typekit.net/gta0mfy.css">
 
         <?php wp_head(); ?>

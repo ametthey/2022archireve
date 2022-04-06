@@ -23,7 +23,7 @@ function generateRandomString($length = 10) {
     <div class="filtres-tags-items">
         <?php $count = 20; ?>
         <?php foreach( range(1,$count) as $item){ ?>
-        <div class="filtres-tags-item">
+        <div class="filtres-tags-item filtres-button">
             <span><?php echo generateRandomString(); ?></span>
         </div>
         <?php } ?>

@@ -42,7 +42,7 @@ const path = {
         dest: 'dist/assets/css'
     },
     scripts: {
-        src: ['src/assets/js/main.js'],
+        src: ['src/assets/js/main.js', 'src/assets/js/main-log.js' ],
         dest: 'dist/assets/js'
     },
     images: {
@@ -121,7 +121,7 @@ export const scripts = () => {
             mode: PRODUCTION ? 'production' : 'development', // add this
 
         }))
-        .pipe( concat('main.js') )
+        // .pipe( concat('main.js') )
         .pipe(gulpif(PRODUCTION, terser()))
         .pipe(size({
             title: 'JavaScript',

@@ -14,6 +14,7 @@ function slider(){
         type: 'slider',
         startAt: 0,
         perView: 2,
+        focusAt: 'center',
         breakpoints: {
             600: {
                 perView: 1

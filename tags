@@ -1701,7 +1701,7 @@ bottom	includes/acf/assets/inc/select2/4/select2.full.js	/^						bottom: $window
 bottom	includes/acf/assets/inc/select2/4/select2.js	/^						bottom: $window.scrollTop() + $window.height(),$/;"	P
 boundingRect	includes/acf/assets/inc/select2/4/select2.full.js	/^					var boundingRect = this.getBoundingClientRect();$/;"	V
 browsers	includes/acf/includes/api/api-helpers.php	/^		$browsers = array($/;"	v
-bubble	src/assets/js/components/profil.js	/^    const bubble = document.querySelector('#age-output');$/;"	V
+bubble	src/assets/js/components/profil.js	/^        const bubble = document.querySelector('#age-output');$/;"	V
 build	gulpfile.babel.js	/^export const build = gulp.series(clean, gulp.parallel(styles, scripts, images, copy));$/;"	E
 buildChangeDetails	includes/acf/assets/inc/select2/3/select2.js	/^		buildChangeDetails: function ( old, current ) {$/;"	M
 buildChangeDetails	includes/acf/assets/inc/select2/3/select2.min.js	/^					buildChangeDetails: function ( a, b ) {$/;"	M
@@ -2121,6 +2121,7 @@ containerCssClass	includes/acf/assets/inc/select2/4/select2.full.js	/^						cont
 containerCssClass	includes/acf/assets/inc/select2/4/select2.full.js	/^						containerCssClass = containerCssClass.replace($/;"	P
 containerEventName	includes/acf/assets/inc/select2/3/select2.js	/^			this.containerEventName = this.containerId$/;"	P
 containerLeft	includes/acf/assets/inc/select2/3/select2.js	/^			containerLeft = this.selection.offset().left;$/;"	P
+containerLoadAnimation	src/assets/js/components/log-in.js	/^    const containerLoadAnimation = document.querySelector('.container-page-load-animation');$/;"	V
 containerLoadAnimation	src/assets/js/components/page-transition.js	/^    const containerLoadAnimation = document.querySelector('.container-page-load-animation');$/;"	V
 containerReves	src/assets/js/components/apropos.js	/^const containerReves = document.querySelector('#container-reves');$/;"	V
 content	includes/acf/assets/inc/select2/4/select2.full.js	/^					var content = template( result, container );$/;"	V
@@ -2193,7 +2194,7 @@ counter	includes/acf/assets/inc/select2/3/select2.js	/^		var counter = 1;$/;"	V
 create	includes/acf/assets/inc/timepicker/jquery-ui-timepicker-addon.js	/^				create: function ( tp_inst, obj, unit, val, min, max, step ) {$/;"	M
 createAndSelect	includes/acf/assets/inc/select2/4/select2.full.js	/^				function createAndSelect( data ) {$/;"	F
 createAndSelect	includes/acf/assets/inc/select2/4/select2.js	/^				function createAndSelect( data ) {$/;"	F
-createBubble	src/assets/js/components/profil.js	/^function createBubble() {$/;"	F
+createBubble	src/assets/js/components/profil.js	/^function createBubble(range, bubble) {$/;"	F
 createContainer	includes/acf/assets/inc/select2/3/select2.js	/^		createContainer: function () {$/;"	M
 createContainer	includes/acf/assets/inc/select2/3/select2.min.js	/^					createContainer: function () {$/;"	M
 createSearchChoicePosition	includes/acf/assets/inc/select2/3/select2.js	/^		createSearchChoicePosition: 'top',$/;"	P
@@ -2776,7 +2777,7 @@ edit_term	includes/acf/includes/forms/form-taxonomy.php	/^		function edit_term( 
 edit_widget	includes/acf/includes/forms/form-widget.php	/^		function edit_widget( $widget, $return, $instance ) {$/;"	f
 editable_roles	includes/acf/includes/api/api-helpers.php	/^	$editable_roles = get_editable_roles();$/;"	v
 editor	header-home.php	/^$editor = current_user_can( 'editor' );$/;"	v
-editor	page-inscription-profile.php	/^$editor = current_user_can( 'editor' );$/;"	v
+editor	page-inscription-profile-message-de-remerciements.php	/^$editor = current_user_can( 'editor' );$/;"	v
 editor_id	includes/acf/includes/fields/class-acf-field-wysiwyg.php	/^			$editor_id = 'acf_content';$/;"	v
 ee_get_post_types	includes/acf/includes/third-party.php	/^		function ee_get_post_types( $post_types, $args ) {$/;"	f
 ee_post_types	includes/acf/includes/third-party.php	/^				$ee_post_types = array_keys( $ee_post_types );$/;"	v
@@ -3056,7 +3057,7 @@ field	includes/acf/pro/fields/class-acf-field-flexible-content.php	/^			$field =
 field	includes/acf/pro/fields/class-acf-field-flexible-content.php	/^			$field = acf_update_field( $field );$/;"	v
 field	includes/acf/pro/fields/class-acf-field-gallery.php	/^			$field = acf_get_field( $args['field_key'] );$/;"	v
 field	includes/acf/pro/fields/class-acf-field-repeater.php	/^			$field = acf_update_field( $field );$/;"	v
-field	template-parts/container-filtres.php	/^                            $field = get_sub_field( $term->slug );$/;"	v
+field	template-parts/home/filtres/filtres-info.php	/^                            $field = get_sub_field( $term->slug );$/;"	v
 field_group	includes/acf/includes/acf-field-group-functions.php	/^		$field_group = acf_get_local_field_group( $id );$/;"	v
 field_group	includes/acf/includes/acf-field-group-functions.php	/^		$field_group = acf_get_raw_field_group( $id );$/;"	v
 field_group	includes/acf/includes/acf-field-group-functions.php	/^		$field_group = apply_filters( 'acf\/translate_field_group', $field_group );$/;"	v
@@ -3256,6 +3257,7 @@ fns	includes/acf/assets/inc/timepicker/jquery-ui-timepicker-addon.js	/^				fns =
 focus	includes/acf/assets/inc/select2/3/select2.js	/^		focus: function () {$/;"	M
 focus	includes/acf/assets/inc/select2/3/select2.js	/^	function focus( $el ) {$/;"	F
 focus	includes/acf/assets/inc/select2/3/select2.min.js	/^					focus: function () {$/;"	M
+focusAt	src/assets/js/components/filtres.js	/^        focusAt: 'center',$/;"	P
 focusSearch	includes/acf/assets/inc/select2/3/select2.js	/^		focusSearch: function () {$/;"	M
 focusSearch	includes/acf/assets/inc/select2/3/select2.min.js	/^					focusSearch: function () {$/;"	M
 focusser	includes/acf/assets/inc/select2/3/select2.js	/^			this.focusser = container.find( '.select2-focusser' );$/;"	P
@@ -4906,7 +4908,7 @@ lowestDelta	includes/acf/assets/inc/select2/4/select2.full.js	/^					lowestDelta
 lowestDelta	includes/acf/assets/inc/select2/4/select2.full.js	/^				lowestDelta = null;$/;"	P
 lucide	src/assets/js/components/apropos.js	/^const lucide =  '#c12b2b';$/;"	V
 lucidite	src/assets/js/components/bandeaux.js	/^    const lucidite = document.querySelector('.info-content-lucidite');$/;"	V
-lucidite_terms	template-parts/container-filtres.php	/^                        <?php $lucidite_terms = get_terms([$/;"	v
+lucidite_terms	template-parts/home/filtres/filtres-info.php	/^                        <?php $lucidite_terms = get_terms([$/;"	v
 lucidite_terms	template-parts/home/filtres/filtres-lucidite.php	/^    <?php $lucidite_terms = get_terms([$/;"	v
 lucs	template-parts/container-reves.php	/^        <?php $lucs = get_terms([$/;"	v
 m	includes/acf/assets/inc/select2/3/select2.min.js	/^												m = 0, n = d.length;$/;"	P
@@ -6357,6 +6359,7 @@ pre_load_reference	includes/acf/includes/forms/form-customizer.php	/^		function 
 pre_load_value	includes/acf/includes/forms/form-customizer.php	/^		function pre_load_value( $value, $post_id, $field ) {$/;"	f
 pre_save_post	includes/acf/includes/forms/form-front.php	/^		function pre_save_post( $post_id, $form ) {$/;"	f
 pre_update_option	includes/acf/includes/forms/form-customizer.php	/^		function pre_update_option( $value, $option, $old_value ) {$/;"	f
+prefill_form_field	page-inscription-profile.php	/^function prefill_form_field( $value, $field, $form, $args ) {$/;"	f
 prefix	includes/acf/assets/inc/select2/4/select2.full.js	/^							prefix = name.substring( 0, index );$/;"	P
 prefix	includes/acf/assets/inc/select2/4/select2.full.js	/^							prefix = normalize( prefix, relResourceName );$/;"	P
 prefix	includes/acf/assets/inc/select2/4/select2.full.js	/^							prefix = parts[ 0 ],$/;"	P
@@ -6601,6 +6604,7 @@ removeAllItems	includes/acf/assets/inc/select2/4/select2.js	/^				removeAllItems
 removeAllItems	includes/acf/assets/inc/select2/4/select2.min.js	/^						removeAllItems: function () {$/;"	M
 removeHighlight	includes/acf/assets/inc/select2/3/select2.js	/^		removeHighlight: function () {$/;"	M
 removeHighlight	includes/acf/assets/inc/select2/3/select2.min.js	/^					removeHighlight: function () {$/;"	M
+removeWelcomeAnimationBackground	src/assets/js/components/log-in.js	/^function removeWelcomeAnimationBackground() {$/;"	F
 removeWelcomeAnimationBackground	src/assets/js/components/page-transition.js	/^function removeWelcomeAnimationBackground() {$/;"	F
 remove_jquery_migrate	lib/cleanup.php	/^function remove_jquery_migrate($scripts)$/;"	f
 remove_loop	includes/acf/includes/loop.php	/^		function remove_loop( $i = 'active' ) {$/;"	f
@@ -7285,7 +7289,7 @@ squareWidth	includes/acf/assets/inc/color-picker-alpha/wp-color-picker-alpha.js	
 src	gulpfile.babel.js	/^        src: 'src\/assets\/images\/**\/*.{webm,jpg,jpeg,png,svg,gif,mp4,json}',$/;"	P
 src	gulpfile.babel.js	/^        src: ['**\/*', '!.DS_Store', '!node_modules{,\/**}', '!packaged{,\/**}', '!src{,\/**}', '!.babelrc' , '!gitignore' , '!gulpfile.babel.js' , '!package.json' , '!package-lock.json'],$/;"	P
 src	gulpfile.babel.js	/^        src: ['src\/assets\/**\/*', '!src\/assets\/{images,js,scss}', '!src\/assets\/{images,js,scss}\/**\/*'],$/;"	P
-src	gulpfile.babel.js	/^        src: ['src\/assets\/js\/main.js'],$/;"	P
+src	gulpfile.babel.js	/^        src: ['src\/assets\/js\/main.js', 'src\/assets\/js\/main-log.js' ],$/;"	P
 src	gulpfile.babel.js	/^        src: ['src\/assets\/scss\/bundle.scss'],$/;"	P
 src	includes/acf/includes/api/api-helpers.php	/^			$src      = wp_get_attachment_image_src( $attachment->ID, 'full' );$/;"	v
 src	includes/acf/includes/api/api-helpers.php	/^			$src = wp_get_attachment_image_src( $sizes_id, $size );$/;"	v
@@ -8017,7 +8021,7 @@ types	includes/acf/includes/fields.php	/^	$types  = acf_get_field_types();$/;"	v
 types	includes/acf/includes/locations.php	/^	$types = array();$/;"	v
 types	includes/acf/includes/rest-api/class-acf-rest-request.php	/^		$types = get_post_types( array( 'show_in_rest' => true ), 'objects' );$/;"	v
 typologie	src/assets/js/components/bandeaux.js	/^    const typologie = document.querySelector('.info-content-typologie');$/;"	V
-typologie_terms	template-parts/container-filtres.php	/^                        <?php $typologie_terms = get_terms([$/;"	v
+typologie_terms	template-parts/home/filtres/filtres-info.php	/^                        <?php $typologie_terms = get_terms([$/;"	v
 typologie_terms	template-parts/home/filtres/filtres-typologie.php	/^    <?php $typologie_terms = get_terms([$/;"	v
 tzi	includes/acf/assets/inc/timepicker/jquery-ui-timepicker-addon.js	/^				tzi = 0,$/;"	P
 tzoffset	includes/acf/assets/inc/timepicker/jquery-ui-timepicker-addon.js	/^		var tzoffset = $.timepicker.timezoneOffsetNumber( tp_inst.timezone );$/;"	V
@@ -8147,8 +8151,12 @@ use_path	includes/acf/includes/api/api-helpers.php	/^		$use_path     = isset( $a
 user	header-home.php	/^$user = wp_get_current_user();$/;"	v
 user	includes/acf/includes/api/api-helpers.php	/^			$user = acf_extract_var( $users, $key );$/;"	v
 user	includes/acf/includes/locations/class-acf-location-current-user-role.php	/^			$user = wp_get_current_user();$/;"	v
-user	page-inscription-profile.php	/^$user = wp_get_current_user();$/;"	v
+user	page-administration-profil-modified.php	/^            $user = wp_get_current_user();$/;"	v
+user	page-administration.php	/^            $user = wp_get_current_user();$/;"	v
+user	page-inscription-profile-message-de-remerciements.php	/^$user = wp_get_current_user();$/;"	v
+user	page-inscription-profile.php	/^    $user = wp_get_current_user();$/;"	v
 user	page-profile.php	/^$user = wp_get_current_user();$/;"	v
+user	single-reveur.php	/^$user = wp_get_current_user();$/;"	v
 user	template-parts/administration/pseudo.php	/^$user = wp_get_current_user();$/;"	v
 user_data	includes/acf/includes/fields/class-acf-field-user.php	/^				$user_data = get_userdata( $user_id );$/;"	v
 user_form	includes/acf/includes/locations/class-acf-location-user-form.php	/^				$user_form = $screen['user_form'];$/;"	v
@@ -8168,8 +8176,12 @@ user_roles	includes/acf/includes/api/api-helpers.php	/^	$user_roles = acf_get_pr
 user_search_columns	includes/acf/includes/fields/class-acf-field-user.php	/^		function user_search_columns( $columns, $search, $WP_User_Query ) {$/;"	f
 username	header-home.php	/^$username = $user->user_nicename;$/;"	v
 username	lib/logins.php	/^    if( $username == "" || $password == "" ) {$/;"	v
-username	page-inscription-profile.php	/^$username = $user->user_nicename;$/;"	v
+username	page-administration-profil-modified.php	/^            $username = $user->user_nicename;$/;"	v
+username	page-administration.php	/^            $username = $user->user_nicename;$/;"	v
+username	page-inscription-profile-message-de-remerciements.php	/^$username = $user->user_nicename;$/;"	v
+username	page-inscription-profile.php	/^    $username = $user->user_nicename;$/;"	v
 username	page-profile.php	/^$username = $user->user_nicename;$/;"	v
+username	single-reveur.php	/^$username = $user->user_nicename;$/;"	v
 username	template-parts/administration/pseudo.php	/^$username = $user->user_nicename;$/;"	v
 users	includes/acf/includes/acf-user-functions.php	/^	$users = get_users( $args );$/;"	v
 users	includes/acf/includes/ajax/class-acf-ajax-query-users.php	/^					$users         = (array) $wp_user_query->get_results();$/;"	v

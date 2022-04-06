@@ -9,7 +9,7 @@ $user = wp_get_current_user();
 $username = $user->user_nicename;
 ?>
 
-<?php if ( is_user_logged_in() && $editor ) { ?>
+<?php if ( is_user_logged_in() ) { ?>
 <div class="container-user-menu">
 
     <?php get_template_part( 'template-parts/administration/pseudo' ); ?>

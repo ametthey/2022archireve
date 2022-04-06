@@ -68,11 +68,11 @@ $r30: calc( #{$r} * 30 );
 
 
 // Animations / Transitions
-$duration: 0.25s;
+$duration: 0.2s;
 $duration2: 0.7s;
 $delay: 0.0s;
 $easing: ease;
 $easing2: ease-in-out;
 
-$transition: all $duration $delay $easing2;
+$transition: all $duration $delay $easing;
 $transition2: all $duration2 $delay $easing2;

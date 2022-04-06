@@ -5,9 +5,13 @@
 ?>
 <?php get_header(); ?>
 <?php
-$user = wp_get_current_user();
-$username = $user->user_nicename;
-$editor = current_user_can( 'editor' );
+function prefill_form_field( $value, $field, $form, $args ) {
+
+    $user = wp_get_current_user();
+    $username = $user->user_nicename;
+    return $username;
+}
+add_filter( 'af/field/prefill_value/name=post_title', 'prefill_form_field', 10, 4 );
 ?>
 
 <div class="container-formulaire-profil">
@@ -17,6 +21,7 @@ $editor = current_user_can( 'editor' );
 
 </div>
 
-<div class="container-profile"><?php echo do_shortcode(' [advanced_form form="form_6248328569951"] '); ?></div>
+<div class="container-profile"><?php echo do_shortcode(' [advanced_form form="form_624d0033175f7" redirect="/administration" ] '); ?></div>
+
 
 <?php get_footer(); ?>

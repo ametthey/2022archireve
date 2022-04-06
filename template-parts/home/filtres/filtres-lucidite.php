@@ -12,7 +12,7 @@
     <?php
 
     foreach( $lucidite_terms as $term ) {
-        echo '<button class="button-round-corner button-small ' . $term->slug . '" data-filter=".' . $term->slug .'" aria-hidden="true">' . $term->name . '</button>';
+        echo '<button class="filtres-button button-round-corner button-small ' . $term->slug . '" data-filter=".' . $term->slug .'" aria-hidden="true">' . $term->name . '</button>';
     }
     ?>
     </div>
