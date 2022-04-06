@@ -1,0 +1,63 @@
+{
+    "key": "group_62491adb889e6",
+    "title": "Création d'un rêve",
+    "fields": [
+        {
+            "key": "field_62491b74b0d0d",
+            "label": "Titre du rêve",
+            "name": "titre_du_reve",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "input-text",
+                "id": "titre-du-reve"
+            },
+            "hide_admin": 0,
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "Titre",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_624c30e62cd6b",
+            "label": "Date du rêve",
+            "name": "date_du_reve",
+            "type": "date_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": "date-du-reve"
+            },
+            "hide_admin": 0,
+            "display_format": "d\/m\/Y",
+            "return_format": "d\/m\/Y",
+            "first_day": 1
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "af_form",
+                "operator": "==",
+                "value": "form_62491aae8a3b1"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1649160656
+}

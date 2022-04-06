@@ -1,0 +1,31 @@
+#titre-du-reve {
+    .acf-label {
+        display: none;
+    }
+
+    .acf-input {
+        .acf-input-prepend {
+            text-align: center;
+        }
+
+        .acf-input-wrap {
+            text-align: center;
+
+            input {
+                border-bottom: $b1 solid $color;
+                width: 30%;
+
+                @include respond(tablet) {
+                    width: 90%;
+                }
+
+                &::placeholder {
+                    color: $color;
+                    opacity: 0.7;
+                    font-size: $small;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

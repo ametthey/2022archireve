@@ -1,0 +1,41 @@
+.search-bar {
+    margin: $r4 0;
+    position: relative;
+    width: 80%;
+
+    input {
+        border-bottom: $b1 solid $color;
+        position: relative;
+        width: 100%;
+
+        &::placeholder {
+            color: $color;
+            opacity: 0.75;
+        }
+    }
+
+    svg {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}
+
+.filtres-tags-items {
+    cursor: pointer;
+    display: flex;
+    flex-wrap: wrap;
+
+    & > * {
+        font-size: $h5;
+        border: $b1 solid $color;
+        padding: $r;
+        margin: 0 $r $r 0;
+
+        &:hover {
+            background-color: $color;
+            color: $bg;
+        }
+    }
+
+}

@@ -1,0 +1,28 @@
+.filtres-typologie {
+}
+
+.filtres-typologie-items {
+    margin: $r3 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+    & > * {
+    }
+
+    button {
+        align-items: center;
+        display: flex;
+        cursor: pointer;
+        margin: 0 $r $r 0;
+    }
+
+    img {
+        width: 25px;
+        margin: 0 5px;
+    }
+}
+
+.section-filtres-typologie {
+    padding-top: calc( #{$r3} + 15px );
+}

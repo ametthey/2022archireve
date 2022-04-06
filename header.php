@@ -10,13 +10,15 @@
 
         <?php wp_head(); ?>
     </head>
-    <body <?php body_class() ?> >
+    <body <?php body_class() ?> data-barba="wrapper">
 
-    <header id="header-default">
+    <main data-barba="container" data-barba-namespace="other">
 
-        <!-- logo -->
-        <a id="nav-logo" href="<?php echo esc_url( get_home_url() ); ?>" target="_blank">
-        <?php get_template_part( 'template-parts/elements/logo-one-line' ); ?>
-        </a>
+        <header id="header-default">
 
-    </header>
+            <!-- logo -->
+            <a id="nav-logo" href="<?php echo esc_url( get_home_url() ); ?>">
+            <?php get_template_part( 'template-parts/elements/logo-one-line' ); ?>
+            </a>
+
+        </header>

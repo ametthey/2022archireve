@@ -1,6 +1,8 @@
 #container-home {
     display: flex;
     height: calc( 100vh - 51px );
+    overflow:hidden;
+    position: relative;
 }
 
 .bandeau {
@@ -10,27 +12,35 @@
 /***********************************************************************
  * CONTAINER FILTRES
  ***********************************************************************/
+
+$wfr: calc( 100vw - 50px );
+
 #container-filtres {
     border-right: 1px solid $color;
     height: inherit;
     transition: $transition2;
     position: relative;
     width:  50px;
-
-    &.open {
-        width: 450px;
-
-        .container-cover {
-            display: none;
-        }
-
-        #close-black {
-            display: block;
-        }
-    }
+    will-change: transform;
+    width: 550px;
+    position: absolute;
+    z-index: 3;
+    transform: translate3d( -500px, 0, 0 );
 
     @include respond(tablet) {
-        width: 35px;
+        width: 100vw;
+        transform: translate3d( -100%, 0, 0 );
+        left: 35px;
+    }
+
+
+    &.open {
+        transform: translate3d( 0, 0, 0 );
+
+        @include respond(tablet) {
+            transform:  translate3d(0%, 0, 0);
+            left: 0;
+        }
     }
 }
 
@@ -40,30 +50,50 @@
  ***********************************************************************/
 #container-reves {
     transition: $transition2;
+    opacity: 1;
     overflow: auto;
     width:  calc( 100% - 100px );
+    position: relative;
+    z-index: 1;
+    margin: 0 50px;
+    pointer-events: auto;
 
     &.closed {
-        width: 50px;
+        // width: 50px;
 
         .container-cover {
-            display: block;
+            opacity: 1;
+            visibility: visible;
+            pointer-events: auto;
         }
 
         #wrapper-reves {
-            display: none;
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+        }
+    }
+
+    &.pause {
+        opacity: 0.2;
+        overflow: hidden;
+
+        #wrapper-reves {
+            pointer-events: none;
         }
     }
 
     @include respond(tablet) {
         width: 100%;
+        margin: 0 0 0 35px;
     }
 }
-
 
 /***********************************************************************
  * CONTAINER A PROPOS
  ***********************************************************************/
+$aproposW: calc( 100vw - 50px );
+
 #container-apropos {
     border-left: 1px solid $color;
     transition: $transition2;
@@ -71,9 +101,11 @@
     display: flex;
     color: $bg;
     position: relative;
+    will-change: transform;
+    overflow: hidden;
 
     &.open {
-        width: calc( 100% - 100px );
+        // width: calc( 100% - 100px );
 
         #close-white {
             display: block;
@@ -86,5 +118,17 @@
 
     @include respond(tablet) {
         display: none;
+    }
+
+    width: calc( 100vw - 100px );
+    // transform: translateX( $aproposW );
+    transform:  translate3d($aproposW, 0, 0);
+    position: absolute;
+    height: inherit;
+    z-index: 2;
+
+
+    &.open {
+        transform: translate3d( 100px, 0, 0 );
     }
 }

@@ -8,6 +8,7 @@
     writing-mode: vertical-rl;
 
     .container-cover-title {
+        -webkit-tap-highlight-color: transparent;
         cursor: pointer;
         margin-bottom: $r4;
         margin-left: 15.5px;
@@ -21,6 +22,7 @@
     }
 }
 
+// A PROPOS
 .container-cover-apropos {
     justify-content: space-between;
     display: flex;
@@ -53,9 +55,29 @@
     }
 }
 
+// COVER REVES
 .container-cover-reves {
-    display: none;
+    transition: $transition2;
+    display: block;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+    position: fixed;
+    left: 48px;
 }
+
+// COVER FILTRES
+.container-cover-filtres {
+    position: fixed;
+    top: 0;
+    right: 0;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    display: block;
+    transition: $transition2;
+}
+
 /***********************************************************************
  * CLOSE BUTTONS
  ***********************************************************************/
@@ -65,14 +87,20 @@
 }
 
 #close-black {
+    -webkit-tap-highlight-color: transparent;
     position: absolute;
     top: $r4;
-    right: $r;
-    display: none;
+    right: $r2;
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: $transition2;
 
     @include respond(tablet) {
         top: $r2;
-        right: $rs;
+        // right: $rs;
+        right: $r2;
         transform: scale(0.8);
         transform-origin: top right;
     }

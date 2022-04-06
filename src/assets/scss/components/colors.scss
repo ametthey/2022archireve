@@ -1,0 +1,66 @@
+$colors: (
+    cauchemar: $cauchemar,
+    commun: $commun,
+    concomitant: $concomitant,
+    creatif: $creatif,
+    actualite: $actualite,
+    recurrent: $recurrent,
+    sexuel: $sexuel,
+    premonitoire: $premonitoire,
+    lucide: $lucide
+    );
+$bgs: (
+    cauchemar: $cauchemar,
+    commun: $commun,
+    concomitant: $concomitant,
+    creatif: $creatif,
+    actualite: $actualite,
+    recurrent: $recurrent,
+    sexuel: $sexuel,
+    premonitoire: $premonitoire,
+    lucide: $lucide
+    );
+
+
+@each $key, $color in $colors {
+    .button-color-#{$key} {
+        color: $color;
+    }
+
+    .color-#{$key} {
+        color: $color !important;
+    }
+
+    .hover-#{$key} {
+        &:hover {
+            background-color: $color !important;
+            border: $b2 solid $black !important;
+        }
+    }
+}
+@each $key, $bg in $bgs {
+    .button-background-#{$key} {
+        background-color: $bg;
+    }
+
+    .background-#{$key} {
+        background-color: $bg;
+    }
+
+    .border-#{$key} {
+        border: $b2 solid $bg !important;
+    }
+
+    .border-bottom-#{$key} {
+        border-bottom: $b2 solid $bg;
+    }
+
+    .border-left-#{$key} {
+        border-left: $b2 solid $bg;
+    }
+
+    .border-right-#{$key} {
+        border-right: $b2 solid $bg;
+    }
+}
+

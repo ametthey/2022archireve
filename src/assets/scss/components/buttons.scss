@@ -63,7 +63,7 @@
 
 .button-medium {
     font-size: $h4;
-    padding: 5px 10px;
+    padding: 7px 20px;
 
     @include respond(tablet) {
         font-size: $small;
@@ -75,4 +75,12 @@
     padding: 15px 35px;
 }
 
+.circle-big {
+    height: 26px;
+    width: 26px;
+}
+
 // COLORS
+[data-background-color="cauchermar"] {
+    background-color: $cauchemar;
+}

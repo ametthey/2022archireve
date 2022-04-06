@@ -1,6 +1,7 @@
 // Colors
 $bg: #fcfcfc;
 $color: #303030;
+$black: #303030;
 $violet: #6453A3;
 $cauchemar: #6755AA;
 $commun: #256EFF;
@@ -20,10 +21,10 @@ $good: 'GoodGlyphs';
 
 // Sizes
 // Buttons
-$small: 12px;
-$h1: clamp(1.125rem, 0.0566rem + 2.8537vw, 2.625rem);;
-$h2: 26px;
-$h3: 22px;
+$small: 14px;
+$h1: clamp(1.375rem, 0.0566rem + 2.8537vw, 2.625rem);;
+$h2: clamp(1.075rem, 0.3408rem + 1.4269vw, 1.625rem);
+$h3: clamp(0.875rem, 0.5189rem + 0.9512vw, 1.375rem);
 $h4: 20px;
 $h5: 16px;
 $h6: 14px;
@@ -68,10 +69,10 @@ $r30: calc( #{$r} * 30 );
 
 // Animations / Transitions
 $duration: 0.25s;
-$duration2: 0.5s;
+$duration2: 0.7s;
 $delay: 0.0s;
 $easing: ease;
+$easing2: ease-in-out;
 
-$transition: all $duration $delay $easing;
-$transition2: all $duration2 $delay $easing;
-
+$transition: all $duration $delay $easing2;
+$transition2: all $duration2 $delay $easing2;

@@ -5,4 +5,12 @@
     margin-top: $r4;
     overflow: hidden;
     position: relative;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transition: $transition2;
+
+    @include respond(tablet) {
+        margin-top: $r2;
+    }
 }

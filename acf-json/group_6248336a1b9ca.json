@@ -1,0 +1,761 @@
+{
+    "key": "group_6248336a1b9ca",
+    "title": "Profil d'utilisateur",
+    "fields": [
+        {
+            "key": "field_6248386e14154",
+            "label": "AGE",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "champ-title",
+                "id": "title-age"
+            },
+            "hide_admin": 1,
+            "message": "",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_624833e24aed0",
+            "label": "age",
+            "name": "age",
+            "type": "range",
+            "instructions": "",
+            "required": "",
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "champ-curseur",
+                "id": "item-age"
+            },
+            "hide_admin": 1,
+            "default_value": 50,
+            "min": "",
+            "max": "",
+            "step": 5,
+            "prepend": "<span>0<span>",
+            "append": "<span>100+<span>"
+        },
+        {
+            "key": "field_6248378314153",
+            "label": "GENRE",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "champ-title",
+                "id": ""
+            },
+            "hide_admin": 1,
+            "message": "",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_6248346f4aed1",
+            "label": "Physiologie",
+            "name": "physiologie",
+            "type": "range",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "champ-curseur",
+                "id": ""
+            },
+            "hide_admin": 0,
+            "default_value": 50,
+            "min": "",
+            "max": "",
+            "step": "",
+            "prepend": "<span>H<\/span>",
+            "append": "<span>F<\/span>"
+        },
+        {
+            "key": "field_624834e94aed2",
+            "label": "Ressenti",
+            "name": "ressenti",
+            "type": "range",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "champ-curseur",
+                "id": ""
+            },
+            "hide_admin": 0,
+            "default_value": 50,
+            "min": "",
+            "max": "",
+            "step": "",
+            "prepend": "<span>H<\/span>",
+            "append": "<span>F<\/span>"
+        },
+        {
+            "key": "field_624834fd4aed3",
+            "label": "Attirance",
+            "name": "attirance",
+            "type": "range",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "champ-curseur",
+                "id": ""
+            },
+            "hide_admin": 0,
+            "default_value": 50,
+            "min": "",
+            "max": "",
+            "step": "",
+            "prepend": "<span>H<\/span>",
+            "append": "<span>F<\/span>"
+        },
+        {
+            "key": "field_624835124aed4",
+            "label": "Langues maternelles",
+            "name": "langues_maternelles",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": 0,
+            "default_value": "",
+            "placeholder": "Écrivez les langues séparées par une virgule",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_6248a4969b3e7",
+            "label": "Pays d'enfance",
+            "name": "pays_denfance",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "pays-enfance",
+                "id": ""
+            },
+            "hide_admin": 0,
+            "default_value": "",
+            "placeholder": "France",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_6248a4be9b3e8",
+            "label": "MILIEUX",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "champ-title",
+                "id": ""
+            },
+            "hide_admin": 0,
+            "message": "",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_6248a4d39b3e9",
+            "label": "Origine",
+            "name": "origine",
+            "type": "range",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "champ-curseur",
+                "id": "milieu"
+            },
+            "hide_admin": 0,
+            "default_value": 50,
+            "min": "",
+            "max": "",
+            "step": "",
+            "prepend": "<span>Modeste<\/span>",
+            "append": "<span>Aisé<\/span>"
+        },
+        {
+            "key": "field_6248a4f19b3ea",
+            "label": "Actuel",
+            "name": "actuel",
+            "type": "range",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "champ-curseur",
+                "id": "milieu"
+            },
+            "hide_admin": 0,
+            "default_value": 50,
+            "min": "",
+            "max": "",
+            "step": "",
+            "prepend": "<span>Modeste<\/span>",
+            "append": "<span>Aisé<\/span>"
+        },
+        {
+            "key": "field_6248dcaadbbd9",
+            "label": "RAPPORT AU TRAVAIL",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "champ-title",
+                "id": ""
+            },
+            "hide_admin": 0,
+            "message": "",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_6248dcb4dbbda",
+            "label": "",
+            "name": "travailleur_patron",
+            "type": "range",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "champ-curseur",
+                "id": ""
+            },
+            "hide_admin": 0,
+            "default_value": 50,
+            "min": "",
+            "max": "",
+            "step": "",
+            "prepend": "<span>Travailleur<\/span>",
+            "append": "<span>Patron<\/span>"
+        },
+        {
+            "key": "field_6248dce8dbbdb",
+            "label": "",
+            "name": "independant_salarié",
+            "type": "range",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "champ-curseur",
+                "id": ""
+            },
+            "hide_admin": 0,
+            "default_value": 50,
+            "min": "",
+            "max": "",
+            "step": "",
+            "prepend": "<span>Indépendant<\/span>",
+            "append": "<span>Salarié<\/span>"
+        },
+        {
+            "key": "field_6248dd0bdbbdc",
+            "label": "",
+            "name": "ne_travaille_pas",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "champ-bouton",
+                "id": ""
+            },
+            "hide_admin": 0,
+            "choices": {
+                "Ne travaille pas": "Ne travaille pas"
+            },
+            "allow_null": 1,
+            "other_choice": 0,
+            "default_value": "",
+            "layout": "vertical",
+            "return_format": "value",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_6248dd72da29b",
+            "label": "RELATION A UN PAYSAGE",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "champ-title",
+                "id": ""
+            },
+            "hide_admin": 0,
+            "message": "",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_6248dd7fda29c",
+            "label": "Enfance",
+            "name": "enfance",
+            "type": "range",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "champ-curseur champ-curseur-title",
+                "id": "enfance-1"
+            },
+            "hide_admin": 0,
+            "default_value": 50,
+            "min": "",
+            "max": "",
+            "step": "",
+            "prepend": "<span>Ville<\/span>",
+            "append": "<span>Campagne<\/span>"
+        },
+        {
+            "key": "field_6248dda3da29d",
+            "label": "",
+            "name": "enfance_2",
+            "type": "range",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "champ-curseur",
+                "id": "enfance-2"
+            },
+            "hide_admin": 0,
+            "default_value": 50,
+            "min": "",
+            "max": "",
+            "step": "",
+            "prepend": "<span>Plaine<\/span>",
+            "append": "<span>Montagne<\/span>"
+        },
+        {
+            "key": "field_6248ddc7da29e",
+            "label": "",
+            "name": "enfance-3",
+            "type": "range",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "champ-curseur",
+                "id": "enfance-3"
+            },
+            "hide_admin": 0,
+            "default_value": 50,
+            "min": "",
+            "max": "",
+            "step": "",
+            "prepend": "<span>Zone humide<\/span>",
+            "append": "<span>Zone sèche<\/span>"
+        },
+        {
+            "key": "field_6248ddeeda29f",
+            "label": "Actuelle",
+            "name": "actuelle",
+            "type": "range",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "champ-curseur champ-curseur-title",
+                "id": "actuelle-1"
+            },
+            "hide_admin": 0,
+            "default_value": 50,
+            "min": "",
+            "max": "",
+            "step": "",
+            "prepend": "<span>Ville<\/span>",
+            "append": "<span>Campagne<\/span>"
+        },
+        {
+            "key": "field_6248de09da2a0",
+            "label": "",
+            "name": "actuelle-2",
+            "type": "range",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "champ-curseur",
+                "id": "actuelle-2"
+            },
+            "hide_admin": 0,
+            "default_value": 50,
+            "min": "",
+            "max": "",
+            "step": "",
+            "prepend": "<span>Plaine<\/span>",
+            "append": "<span>Montagne<\/span>"
+        },
+        {
+            "key": "field_6248de21da2a1",
+            "label": "",
+            "name": "actuelle-3",
+            "type": "range",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "champ-curseur",
+                "id": "actuelle-3"
+            },
+            "hide_admin": 0,
+            "default_value": 50,
+            "min": "",
+            "max": "",
+            "step": "",
+            "prepend": "<span>Zone humide<\/span>",
+            "append": "<span>Zone sèche<\/span>"
+        },
+        {
+            "key": "field_6248dee02ac18",
+            "label": "Attirance",
+            "name": "attirance",
+            "type": "range",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "champ-curseur champ-curseur-title",
+                "id": "attirance-1"
+            },
+            "hide_admin": 0,
+            "default_value": 50,
+            "min": "",
+            "max": "",
+            "step": "",
+            "prepend": "<span>Ville<\/span>",
+            "append": "<span>Campagne<\/span>"
+        },
+        {
+            "key": "field_6248defb2ac19",
+            "label": "",
+            "name": "attirance-2",
+            "type": "range",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "champ-curseur",
+                "id": "attirance-2"
+            },
+            "hide_admin": 0,
+            "default_value": 50,
+            "min": "",
+            "max": "",
+            "step": "",
+            "prepend": "<span>Plaine<\/span>",
+            "append": "<span>Montagne<\/span>"
+        },
+        {
+            "key": "field_6248df142ac1a",
+            "label": "",
+            "name": "attirance-3",
+            "type": "range",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "champ-curseur",
+                "id": "attirance-3"
+            },
+            "hide_admin": 0,
+            "default_value": 50,
+            "min": "",
+            "max": "",
+            "step": "",
+            "prepend": "<span>Zone humide<\/span>",
+            "append": "<span>Zone sèche<\/span>"
+        },
+        {
+            "key": "field_6248e402c924c",
+            "label": "FOI SPIRITUELLE",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "champ-title",
+                "id": ""
+            },
+            "hide_admin": 0,
+            "message": "",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_6248e41ac924d",
+            "label": "Origine",
+            "name": "origine",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "champ-choix",
+                "id": "foi-origine"
+            },
+            "hide_admin": 0,
+            "choices": {
+                "Animiste": "Animiste",
+                "Théiste": "Théiste",
+                "Déiste": "Déiste",
+                "Agnostique": "Agnostique",
+                "Athéiste": "Athéiste",
+                "Panthéiste": "Panthéiste",
+                "Non choix": "Non choix"
+            },
+            "allow_null": 0,
+            "default_value": "",
+            "layout": "vertical",
+            "return_format": "value",
+            "other_choice": 0,
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_6248e462c924e",
+            "label": "Actuelle",
+            "name": "actuelle",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "champ-choix",
+                "id": "foi-actuelle"
+            },
+            "hide_admin": 0,
+            "choices": {
+                "Animiste": "Animiste",
+                "Théiste": "Théiste",
+                "Déiste": "Déiste",
+                "Agnostique": "Agnostique",
+                "Athéiste": "Athéiste",
+                "Panthéiste": "Panthéiste",
+                "Non choix": "Non choix"
+            },
+            "allow_null": 1,
+            "other_choice": 0,
+            "default_value": "",
+            "layout": "vertical",
+            "return_format": "value",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_6248e487c924f",
+            "label": "RELATION AU SOMMEIL",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "champ-title",
+                "id": ""
+            },
+            "hide_admin": 1,
+            "message": "",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_6248e4aac9250",
+            "label": "",
+            "name": "sommeil-1",
+            "type": "range",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "champ-curseur",
+                "id": ""
+            },
+            "hide_admin": 0,
+            "default_value": 50,
+            "min": "",
+            "max": "",
+            "step": "",
+            "prepend": "<span>Bon dormeur<\/span>",
+            "append": "<span>Dormeur précaire<\/span>"
+        },
+        {
+            "key": "field_6248e4cec9251",
+            "label": "",
+            "name": "sommeil-2",
+            "type": "range",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "champ-curseur",
+                "id": ""
+            },
+            "hide_admin": 0,
+            "default_value": 50,
+            "min": "",
+            "max": "",
+            "step": "",
+            "prepend": "<span>J'aime dormir<\/span>",
+            "append": "<span>Je m'en passe<\/span>"
+        },
+        {
+            "key": "field_6248e4f0c9252",
+            "label": "RELATION AUX RÊVES",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "champ-title",
+                "id": ""
+            },
+            "hide_admin": 0,
+            "message": "",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_6248e501c9253",
+            "label": "",
+            "name": "reve-1",
+            "type": "range",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "champ-curseur",
+                "id": ""
+            },
+            "hide_admin": 0,
+            "default_value": 50,
+            "min": "",
+            "max": "",
+            "step": "",
+            "prepend": "<span>Rêveur riche<\/span>",
+            "append": "<span>Peu rêveur<\/span>"
+        },
+        {
+            "key": "field_6248e51ec9254",
+            "label": "",
+            "name": "reve-2",
+            "type": "range",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "champ-curseur",
+                "id": ""
+            },
+            "hide_admin": 0,
+            "default_value": 50,
+            "min": "",
+            "max": "",
+            "step": "",
+            "prepend": "<span>Partie de ma vie<\/span>",
+            "append": "<span>Je m'en passe<\/span>"
+        },
+        {
+            "key": "field_624c7ac32f372",
+            "label": "Post Title",
+            "name": "post_title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": "post-title"
+            },
+            "hide_admin": 0,
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "af_form",
+                "operator": "==",
+                "value": "form_6248328569951"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "reveur"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 1,
+    "modified": 1649179349
+}

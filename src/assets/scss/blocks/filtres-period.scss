@@ -1,0 +1,102 @@
+// Required Core Stylesheet
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
+
+.section-filtres-periode {
+    padding: 0;
+
+    > h4 {
+        margin-top: $r3;
+    }
+}
+
+#period-slider {
+    margin-top: $r3;
+    margin-bottom: $r6;
+}
+
+
+#filtres-period-calendar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h4 {
+        color: $color;
+        margin-bottom: $r2;
+        text-align: center;
+    }
+}
+
+.calendar-container {
+    display: grid;
+    grid-template-columns: repeat(4, 35px);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px 10px;
+}
+
+.glide__slide {
+    // width: auto important;
+}
+
+.calendar-item {
+    cursor: pointer;
+    align-self: stretch;
+    justify-self: stretch;
+    border-radius: 999px;
+    border: $b1 solid $color;
+    height: 35px;
+    width: 35px;
+    display: grid;
+    place-items: center;
+    transition: $transition;
+
+    &:hover {
+        color: $bg;
+        background-color: $color;
+        border: $b1 solid $bg;
+
+        & > * {
+            color: inherit;
+        }
+    }
+
+    span {
+        color: $color;
+        font-size: 12px;
+    }
+
+}
+
+.glide__track {
+    width: calc( 100% - 80px );
+    margin: auto;
+}
+
+.glide__arrows {
+    top: 50%;
+    transform: translate( 0%, -50% );
+    position: absolute;
+
+    &.glide__arrows_prev {
+        left: 5px;
+    }
+
+    &.glide__arrows_next {
+        right: 5px;
+    }
+}
+
+.glide__arrows {
+    text-align: center;
+}
+
+.glide__arrow {
+    cursor: pointer;
+    img {
+        height: 20px;
+
+        @include respond(tablet) {
+            height: 40px;
+        }
+    }
+}

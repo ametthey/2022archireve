@@ -1,0 +1,18 @@
+.filtres-lucidite {
+
+}
+
+.filtres-lucidite-items {
+    margin: $r3 0 0 0;
+    flex-wrap: wrap;
+    width: 100%;
+
+    & > * {
+        cursor: pointer;
+        margin: 0 $r $r 0;
+    }
+}
+
+.section-filtres-lucidite {
+    padding-top: calc( #{$r3} + 15px );
+}

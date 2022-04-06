@@ -1,0 +1,69 @@
+/* Page load animation */
+.barba-once {
+    opacity: 0;
+}
+.barba-once-active {
+    transition: $transition2;
+}
+.barba-once-to {
+    opacity: 1;
+}
+
+
+/* =Fade out, fade in */
+/* Fade out current container */
+/* =Fade out, fade in */
+/* Fade out current container */
+.fade-leave {
+    opacity: 1;
+}
+.fade-leave-active {
+    transition: $transition2;
+}
+.fade-leave-to {
+    opacity: 0;
+}
+
+/* Fade in the next container */
+.fade-enter {
+    opacity: 0;
+}
+.fade-enter-active {
+    transition: $transition2;
+}
+.fade-enter-to {
+    opacity: 1;
+
+    .container-page-load-animation {
+        opacity: 0;
+    }
+}
+
+
+.container-page-load-animation {
+    background-color: $bg;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transition: $transition2;
+
+    &.hide {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
+}
+
+.page-load-animation-element {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50% );
+    width: 70vw;
+}

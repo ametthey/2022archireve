@@ -1,0 +1,11 @@
+.section-filtres-reset {
+    flex-direction: row;
+    justify-content: center;
+    align-items: initial;
+
+    #close-black {
+        position: relative;
+        top: unset;
+        left: unset;
+    }
+}

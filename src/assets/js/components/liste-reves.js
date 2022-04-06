@@ -4,7 +4,7 @@ reves.forEach( reve => {
     const content = reve.querySelector('.reve-item-content');
     const footer = reve.querySelector('.reve-item-footer');
 
-    header.addEventListener( 'click', (e) => {
+    header.addEventListener( 'click', () => {
 
         if ( content.classList.contains('open') ) {
             content.classList.remove('open');

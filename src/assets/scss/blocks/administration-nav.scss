@@ -1,0 +1,36 @@
+.container-user-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user-pseudo {
+    margin-top: $r8;
+    margin-bottom: $r8;
+
+    @include respond(tablet) {
+        margin-bottom: $r4;
+    }
+}
+
+.user-menu-nav {
+    display: flex;
+    gap: $r2;
+    margin-bottom: $r16;
+
+    @include respond(tablet) {
+        flex-direction: column;
+        gap: $r;
+        margin-bottom: $r4;
+    }
+
+    & > * {
+        text-align: center;
+    }
+}
+
+.button-publish-new-dream {
+    span {
+        font-family: $good;
+    }
+}

@@ -59,9 +59,9 @@ add_action( 'init', '_themename_create_reve_cpt', 0 );
 function _themename_create_reveur_cpt() {
 
     $labels = array(
-        'name' => _x( 'reveurs', 'Post Type General Name', '_themename' ),
+        'name' => _x( 'Rêveurs', 'Post Type General Name', '_themename' ),
         'singular_name' => _x( 'reveur', 'Post Type Singular Name', '_themename' ),
-        'menu_name' => _x( 'reveurs', 'Admin Menu text', '_themename' ),
+        'menu_name' => _x( 'Rêveurs', 'Admin Menu text', '_themename' ),
         'name_admin_bar' => _x( 'reveur', 'Add New on Toolbar', '_themename' ),
         'archives' => __( 'Archives reveur', '_themename' ),
         'attributes' => __( 'Attributs reveur', '_themename' ),

@@ -1,4 +1,4 @@
 <?php
 
-// Remove the Language Switcher
-add_filter( 'login_display_language_dropdown', '__return_false' );
+// Redirect to home page after logout
+add_filter('logout_redirect', 'get_home_url');

@@ -1,10 +1,5 @@
 <?php get_header(); ?>
 
-<div class="container--error">
-    <div class="container--error-title">
-        <h2>Wrong way !</h2>
-        <a href="<?php echo esc_url( home_url() ); ?>">Go back to the website</a>
-    </div>
-</div>
+<?php get_template_part( 'template-parts/404/404-content' ); ?>
 
 <?php get_footer(); ?>

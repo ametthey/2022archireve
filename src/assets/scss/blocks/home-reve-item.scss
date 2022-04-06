@@ -1,19 +1,25 @@
 .reve-item {
     background-color: $bg;
-    border: $b2 solid $color;
+    // border: $b2 solid $color;
     display: flex;
     flex-direction: column;
     height: auto;
     margin-bottom: $r4;
     width: 90%;
+
+    @include respond(tablet) {
+        width: calc( 100% - 35px );
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 /***********************************************************************
  * REVE HEADER
  ***********************************************************************/
     .reve-item-header {
+        -webkit-tap-highlight-color: transparent;
         display: flex;
-        border-bottom: $b2 solid $color;
         height: 130px;
         cursor: pointer;
 
@@ -39,12 +45,11 @@
     }
 
     .reve-item-header-parameters {
-        background-color: $color;
         color: $bg;
         width: auto;
         display: flex;
         position: absolute;
-        top: 0;
+        top: -1px;
         left: 0;
         padding: $r;
 
@@ -73,7 +78,6 @@
 
     .reve-item-header-selection {
         align-items: center;
-        border-left: $b2 solid $color;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -130,6 +134,8 @@
 
         @include respond(tablet) {
             height: $r5;
+            height: auto;
+            flex-wrap: wrap;
         }
 
         &.open {
@@ -138,13 +144,14 @@
     }
 
     .reve-footer-typologie {
-        border-right: $b2 solid $color;
+        display: grid;
+        place-items: center;
         height: $r7;
         width: $r7;
 
         @include respond(tablet) {
-            height: $r5;
-            width: $r5;
+            height: $r8;
+            width: $r8;
         }
     }
 
@@ -156,8 +163,13 @@
         overflow: hidden;
 
         @include respond(tablet) {
-            margin: $rss;
-            width: calc( 100% - calc( #{$r7} + 40% ) );
+            border-top: $b1 solid $color;
+            padding: $r;
+            margin: 0;
+            // width: calc( 100% - calc( #{$r7} + 40% ) );
+            width: 100%;
+            // flex: 0.5;
+            order: 3;
         }
     }
 
@@ -165,15 +177,14 @@
         align-self: start;
         border: $b1 solid $color;
         margin: 0 $rs $rs 0;
-        font-size: $small;
+        font-size: 12px;
 
         @include respond(tablet) {
-            margin: 0 $rss $rss;
+            margin: 0 $rs $rs;
         }
     }
 
     .reve-footer-lucidite {
-        border-left: $b2 solid $color;
         display: grid;
         place-items: center;
         width: 25%;
@@ -183,6 +194,8 @@
         }
 
         @include respond(tablet) {
-            width: 40%;
+            width: calc( 100% - #{$r8} );
+            border-left: none;
+            // flex: 2;
         }
     }

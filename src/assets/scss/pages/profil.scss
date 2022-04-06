@@ -1,0 +1,327 @@
+.container-formulaire-profil {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: $r16;
+    margin-bottom: $r16;
+
+    h1 {
+        font-family: $solid;
+        font-weight: normal;
+        margin-bottom: $r4;
+    }
+
+    h3 {
+        font-family: $covik;
+        font-weight: normal;
+        margin-bottom: $r4;
+        width: 35%;
+        text-align: center;
+
+        @include respond(tablet) {
+            width: 80%;
+        }
+    }
+}
+
+
+// FORMULAIRE
+#form_6248328569951 {
+    display: flex;
+    flex-direction: column;
+}
+
+input[name="email_for_non_humans"]{
+    display: none;
+}
+
+
+// LANGUES MATERNELLES
+.af-field-langues-maternelles {
+    text-align: center;
+
+    input {
+        border-bottom: $b1 solid $color;
+        width: 30%;
+
+        @include respond(tablet) {
+            width: 90%;
+        }
+
+        &::placeholder {
+            color: $color;
+            opacity: 0.7;
+            font-size: $small;
+            text-align: center;
+        }
+    }
+}
+
+.pays-enfance {
+    text-align: center;
+
+    .acf-input {
+        input {
+            border-bottom: $b1 solid $color;
+            width: 30%;
+
+            @include respond(tablet) {
+                width: 90%;
+            }
+            &::placeholder {
+                color: $color;
+                opacity: 0.7;
+                font-size: $small;
+                text-align: center;
+            }
+        }
+    }
+}
+
+#milieu {
+    .acf-append {
+        &:before {
+            left: 23px;
+        }
+    }
+}
+
+// bouton ne travaille pas
+.champ-bouton {
+    text-align: center;
+    ul {
+        list-style-type: none;
+
+        input[type="radio"] {
+            accent-color: $color;
+            margin-right: $r;
+            margin-bottom: 2px;
+        }
+    }
+
+}
+
+
+
+// SUBMIT
+.acf-form-submit {
+    text-align: center;
+    margin-top: $r8;
+    margin-bottom: $r8;
+
+    button {
+        cursor: pointer;
+        background-color: $bg;
+        border-radius: 100px 100px 100px 100px;
+        border: $b1 solid $color;
+        color: $color;
+        text-transform: uppercase;
+        transition: $transition;
+        font-size: $h2;
+        padding: 15px 35px;
+
+        &:hover {
+            background-color: $color;
+            border-color: $bg;
+            color: $bg;
+        }
+    }
+}
+
+
+
+
+
+
+// AGE
+.acf-field-6248386e14154 {
+    margin-bottom: $r4;
+}
+
+.acf-field-624833e24aed0 {
+    margin-bottom: $r8;
+}
+
+
+// GENRE
+.acf-field-6248378314153 {
+    margin-bottom: $r2;
+}
+
+// Physiologie
+.acf-field-6248346f4aed1 {
+    margin-bottom: $r4;
+
+    label {
+        margin-bottom: $r2;
+    }
+}
+
+// Ressenti
+.acf-field-624834e94aed2 {
+    margin-bottom: $r4;
+
+    label {
+        margin-bottom: $r2;
+    }
+}
+
+// Attirance
+.acf-field-624834fd4aed3 {
+    margin-bottom: $r4;
+
+    label {
+        margin-bottom: $r2;
+    }
+}
+
+
+// Langues maternelles
+.af-field-langues-maternelles {
+    margin-top: $r8;
+    margin-bottom: $r8;
+
+    label {
+        margin-bottom: $r2;;
+    }
+}
+
+
+// PAYS
+.pays-enfance {
+    margin-top: $r8;
+    margin-bottom: $r8;
+
+    label {
+        margin-bottom: $r2;;
+    }
+}
+
+// MILIEUX
+.acf-field-6248a4be9b3e8 {
+    margin-bottom: $r2;
+}
+
+// Origine
+#milieu {
+    margin-bottom: $r4;
+
+    label {
+        margin-bottom: $r2;
+    }
+
+    // Actuel
+    &.acf-field-6248a4f19b3ea {
+        margin-bottom: $r8;
+    }
+}
+
+// RAPPORT AU TRAVAIL
+.acf-field-6248dcaadbbd9 {
+    margin-bottom: $r2;
+}
+
+// Travailleur / Patron
+.acf-field-6248dcb4dbbda {
+    margin-bottom: $r4;
+}
+
+// Ne Travaille Pas
+.champ-bouton {
+    margin-bottom: $r8;
+}
+
+// RELATION A UN PAYSAGE
+.acf-field-6248dd72da29b {
+    margin-bottom: $r2;
+}
+
+#enfance-1 {
+    margin-bottom: $r4;
+
+    .acf-label {
+        margin-bottom: $r2;
+    }
+}
+
+#enfance-2 {
+    margin-bottom: $r4;
+}
+
+#enfance-3 {
+    margin-bottom: $r8;
+}
+
+#actuelle-1 {
+    margin-bottom: $r4;
+
+    label {
+        margin-bottom: $r2;
+    }
+}
+
+#actuelle-2 {
+    margin-bottom: $r4;
+}
+
+#actuelle-3 {
+    margin-bottom: $r8;
+}
+
+
+#attirance-1 {
+    margin-bottom: $r4;
+
+    .acf-label {
+        margin-bottom: $r2;
+    }
+}
+
+#attirance-2 {
+    margin-bottom: $r4;
+}
+
+#attirance-3 {
+    margin-bottom: $r8;
+}
+
+
+// FOI SPIRITUELLE
+.acf-field-6248e402c924c {
+    margin-bottom: $r2;
+}
+
+
+// RELATION AU SOMMEIL
+.acf-field-6248e487c924f {
+    margin-bottom: $r4;
+}
+
+.acf-field-6248e4aac9250 {
+    margin-bottom: $r4;
+}
+
+.acf-field-6248e4cec9251 {
+    margin-bottom: $r8;
+}
+
+// RELATION AUX RÊVES
+.acf-field-6248e4f0c9252 {
+    margin-bottom: $r4;
+}
+
+.acf-field-6248e501c9253 {
+    margin-bottom: $r4;
+}
+
+// Success message
+#form_6248328569951 {
+    .af-success {
+        text-align: center;
+
+        a {
+            text-decoration: underline;
+        }
+    }
+
+}

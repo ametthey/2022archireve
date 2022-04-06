@@ -1,6 +1,15 @@
 body {
     font-family: $covik;
     position: relative;
+
+    &.home {
+        overflow: hidden;
+        width: 100%;
+    }
+}
+
+a, button {
+    -webkit-tap-highlight-color: transparent;
 }
 
 a {
@@ -21,6 +30,7 @@ p, h1, h2, h3, h4 {
 }
 
 p {
+    line-height: 1.4;
     margin: 0;
 }
 
@@ -32,4 +42,12 @@ h1 {
 
 h2 {
     font-size: $h2;
+}
+
+h3 {
+    font-size: $h3;
+}
+
+h4 {
+    font-size: $h4;
 }

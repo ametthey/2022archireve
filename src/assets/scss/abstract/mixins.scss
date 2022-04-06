@@ -43,3 +43,13 @@
     opacity: 0;
     visibility: hidden;
 }
+
+@mixin foi() {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    content: "";
+    display: inline-block;
+    height: 50px;
+    margin: auto;
+    width: 80px;
+}

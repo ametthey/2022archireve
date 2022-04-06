@@ -1,6 +1,6 @@
 <div class="reve-item-footer">
-    <div class="reve-footer-typologie">
-        <?php get_template_part( 'template-parts/elements/typologie/reve-sexuel' ); ?>
+    <div class="reve-footer-typologie border-right-<?php echo $term->slug; ?>">
+        <?php get_template_part( "template-parts/elements/typologie" ); ?>
     </div>
 
     <div class="reve-footer-tags">
@@ -14,5 +14,5 @@
 
     </div>
 
-<div class="reve-footer-lucidite"><span class="button-round-corner button-no-hover button-medium">Lucidité Tacite</span></div>
+    <div class="reve-footer-lucidite border-left-<?php echo $term->slug; ?>"><span class="button-round-corner button-no-hover button-medium border-<?php echo $term->slug; ?> color-<?php echo $term->slug; ?>"><?php echo $luc->name; ?></span></div>
 </div>

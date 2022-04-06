@@ -8,15 +8,30 @@
 
     <!-- LES REVES -->
     <div id="wrapper-reves">
-
-        <?php $count = 10; ?>
-        <?php foreach( range(1,$count) as $item){ ?>
-        <div class="reve-item">
-            <?php get_template_part( 'template-parts/home/reves/reve-header' ); ?>
-            <?php get_template_part( 'template-parts/home/reves/reve-content' ); ?>
-            <?php get_template_part( 'template-parts/home/reves/reve-footer' ); ?>
-        </div>
-        <?php } ?>
+        <?php $terms = get_terms([
+            'taxonomy' => 'typologie',
+            'hide_empty' => false,
+        ]);?>
+        <?php $lucs = get_terms([
+            'taxonomy' => 'lucidite',
+            'hide_empty' => false,
+        ]);?>
+        <?php // $count = 1; ?>
+        <?php // foreach( range(1,$count) as $item){ ?>
+            <?php foreach( $terms as $term){ ?>
+                <?php foreach( $lucs as $luc){ ?>
+                    <?php
+                    set_query_var( 'term', $term );
+                    set_query_var( 'luc', $luc );
+                    ?>
+                    <div class="reve-item border-<?php echo $term->slug ?>">
+                        <?php get_template_part( 'template-parts/home/reves/reve-header' ); ?>
+                        <?php get_template_part( 'template-parts/home/reves/reve-content' ); ?>
+                        <?php get_template_part( 'template-parts/home/reves/reve-footer' ); ?>
+                    </div>
+                    <?php } ?>
+            <?php } ?>
+        <?php // } ?>
 
 
         <!-- MODAL POUR TELECHARGER LES REVES -->

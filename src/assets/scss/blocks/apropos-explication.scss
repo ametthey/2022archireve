@@ -1,3 +1,5 @@
+$bgbd: $bg;
+
 .apropos-explication {
     margin-top: $r8;
     margin-bottom: $r8;
@@ -15,14 +17,14 @@
     &:nth-of-type(1) {
         .explication-toggle-item-header {
             span {
-                border-top: $b1 solid $bg;
+                border-top: $b1 solid $bgbd;
             }
         }
     }
     &:nth-of-type(6) {
         .explication-toggle-item-header {
             span {
-                border-top: $b1 solid $bg;
+                border-top: $b1 solid $bgbd;
             }
         }
     }
@@ -40,15 +42,15 @@
         display: inline-block;
         padding: $r4;
         font-size: $h3;
-        border-bottom: $b1 solid $bg;
+        border-bottom: $b1 solid $bgbd;
         height: 100px;
         line-height: 1.4;
 
         &:nth-of-type(1) {
             font-size: $h2;
             font-family: $covik;
-            border-right: $b1 solid $bg;
-            border-left: $b1 solid $bg;
+            border-right: $b1 solid $bgbd;
+            border-left: $b1 solid $bgbd;
             width: 10%;
             text-align: center;
 
@@ -59,7 +61,7 @@
 
         &:nth-of-type(2) {
             font-family: $solid;
-            border-right: $b1 solid $bg;
+            border-right: $b1 solid $bgbd;
             width: 90%;
             text-align: left;
         }
@@ -71,9 +73,9 @@
  * Contenu
 *****************************************************************************/
 .explication-toggle-item-content {
-    border-bottom: $b1 solid $bg;
-    border-left: $b1 solid $bg;
-    border-right: $b1 solid $bg;
+    border-bottom: $b1 solid $bgbd;
+    border-left: $b1 solid $bgbd;
+    border-right: $b1 solid $bgbd;
     height: 120%;
     max-height: 0;
     overflow: hidden;

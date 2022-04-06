@@ -6,10 +6,13 @@
 @import 'core/reset';
 @import 'core/fonts';
 @import 'core/typography';
+@import 'core/wordpress';
 
 // COMPONENTS
 @import 'components/buttons';
 @import 'components/bandeaux';
+@import 'components/page-transition';
+@import 'components/colors';
 
 // LAYOUT
 @import 'layout/base';
@@ -17,16 +20,40 @@
 @import 'layout/bandeaux-content';
 
 // PAGES
+@import 'pages/profil';
+@import 'pages/404';
 
 // BLOCKS
 @import 'blocks/home-wrapper-reves';
 @import 'blocks/home-reve-item';
 @import 'blocks/home-modal-telecharger';
 
+@import 'blocks/filtres';
+@import 'blocks/filtres-tag';
+@import 'blocks/filtres-typologie';
+@import 'blocks/filtres-lucidite';
+@import 'blocks/filtres-period';
+@import 'blocks/filtres-reset';
+@import 'blocks/filtres-info';
+
 @import 'blocks/apropos';
 @import 'blocks/apropos-hero';
 @import 'blocks/apropos-explication';
 @import 'blocks/apropos-footer';
 
-// VENDORS
+@import 'blocks/profil-age';
+@import 'blocks/profil-title';
+@import 'blocks/profil-range';
+@import 'blocks/profil-pays';
+@import 'blocks/profil-foi';
 
+@import 'blocks/administration-nav';
+
+@import 'blocks/connexion-inscription';
+@import 'blocks/inscription/success-message';
+
+@import 'blocks/creation-reve/title';
+@import 'blocks/creation-reve/date';
+
+// VENDORS
+@import 'vendors/acf-clear';

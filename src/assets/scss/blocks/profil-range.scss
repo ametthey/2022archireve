@@ -1,0 +1,133 @@
+// INPUT RANGE
+.champ-curseur {
+    text-align: center;
+
+    .acf-label {
+
+        label {
+            // margin: 10px !important;
+            font-size: $h5;
+            font-weight: normal !important;
+        }
+    }
+
+    .acf-input {
+
+        .acf-range-wrap {
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: $r2;
+            position: relative;
+            width: 30%;
+            margin: auto;
+
+            @include respond(tablet) {
+                width: 90%;
+            }
+
+            // Range - input avec le choix du nombre
+            input[type="number"] {
+                display: none;
+            }
+
+
+            // Légendes à gauche et à droite
+            .acf-prepend,
+            .acf-append {
+                position: absolute;
+            }
+
+            .acf-prepend {
+                top: -30px;
+                left: -15px;
+
+                &:before {
+                    content: '';
+                    height: 15px;
+                    width: 15px;
+                    background-color: #303030;
+                    border-radius: 50%;
+                    display: inline-block;
+                    position: absolute;
+                    position: absolute;
+                    bottom: -20px;
+                    opacity: 1;
+                    left: 0;
+                }
+
+                span {
+                    margin-left: 0;
+                }
+            }
+
+            .acf-append {
+                top: -30px;
+                right: -15px;
+
+                &:after {
+                    content: '';
+                    height: 15px;
+                    width: 15px;
+                    background-color: #303030;
+                    border-radius: 50%;
+                    display: inline-block;
+                    position: absolute;
+                    position: absolute;
+                    bottom: -20px;
+                    opacity: 1;
+                    right: 0;
+                }
+
+                span {
+                    margin-left: 0;
+                }
+            }
+
+        }
+
+    }
+}
+
+// TRACÉ
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    background: $color;
+    outline: none;
+    height: 2px;
+    width: 100%;
+
+    // CURSEUR GOOGLE CHROME
+    &::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        background: $bg;
+        border: 1px solid $color;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+    }
+
+    // CURSEUR FIREFOX
+    &::-moz-range-thumb {
+        border: 1px solid $color;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        background: $bg;
+        cursor: pointer;
+    }
+
+    // CURSEUR SAFARI
+    &::-webkit-range-thumb {
+        border: 1px solid $color;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        background: $bg;
+        cursor: pointer;
+    }
+}

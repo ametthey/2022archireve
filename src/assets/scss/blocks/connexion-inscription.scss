@@ -1,0 +1,167 @@
+.container-form {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: calc( 100vh - 50px );
+
+    form {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    h1 {
+        font-family: $solid;
+        font-weight: normal;
+        margin-bottom: $r2;
+    }
+
+    h3 {
+        font-family: $covik;
+        font-weight: normal;
+        margin-bottom: $r4;
+        width: 35%;
+        text-align: center;
+
+        @include respond(tablet) {
+            width: 80%;
+        }
+    }
+
+    p {
+        font-family: $covik;
+        font-weight: normal;
+        font-size: $h6;
+        margin-bottom: $r4;
+        margin-left: auto;
+        margin-right: auto;
+        width: 40%;
+        text-align: center;
+
+        @include respond(tablet) {
+            width: 80%;
+        }
+    }
+}
+
+.container-form-element {
+    padding: 15px 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#loginform,
+#formulaire-inscription {
+    width: 60%;
+
+    input[type="email"],
+    input[type="text"],
+    input[type="password"] {
+        border-bottom: $b1 solid $color;
+        font-size: $h6;
+        margin-bottom: $r4;
+        font-family: $covik;
+        width: 270px;
+        padding: 4px 8px;
+
+        @include respond(tablet) {
+            // width: 70%;
+        }
+    }
+
+    .acf-label {
+        margin: 0;
+        text-align: center;
+
+        label {
+            font-family: $covik;
+            font-size: $h5;
+            font-weight: normal;
+            text-align: center;
+            // margin-bottom: $r2;
+        }
+    }
+    label {
+        font-family: $covik;
+        font-size: $h5;
+        margin-bottom: 3px;
+    }
+
+    input[type="submit"] {
+        cursor: pointer;
+        font-family: $covik;
+    }
+
+    .af-submit {
+        text-align: center;
+    }
+
+    .af-submit-button  {
+        background-color: $bg;
+        border-radius: 100px 100px 100px 100px;
+        border: $b1 solid $color;
+        color: $color;
+        text-transform: uppercase;
+        transition: $transition;
+        font-size: $h4;
+        padding: 10px 20px;
+        font-family: $covik;
+        cursor: pointer;
+        text-align: center;
+
+        @include respond(tablet) {
+            font-size: $h4;
+        }
+
+        &:hover {
+            background-color: $color;
+            border-color: $bg;
+            color: $bg;
+        }
+
+        &.button-no-hover {
+            background-color: $bg;
+            border-color: $color;
+            color: $color;
+        }
+    }
+    .acf-field {
+        border-top: none !important;
+    }
+
+    .acf-input {
+        // Pseudo
+        #acf-field_6247f56dcbece {
+            margin-bottom: $r2;
+        }
+        // Email
+        #acf-field_6247f5a0cbed0 {
+            margin-bottom: $r2;
+        }
+        // Mot de passe
+        #acf-field_6247f586cbecf {
+            margin-bottom: $r2;
+        }
+    }
+}
+
+// Inscription
+#formulaire-inscription {
+    .acf-form-submit {
+        margin-bottom: $r4;
+    }
+}
+
+// already logged in user
+.logged-in-user {
+    p {
+        width: 100%;
+    }
+
+    a {
+        text-decoration: underline;
+    }
+}

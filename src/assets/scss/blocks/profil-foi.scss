@@ -1,0 +1,119 @@
+.champ-choix {
+    text-align: center;
+}
+
+/***********************************************************************
+ * FOI SPIRITUELLE - ORIGINE
+ ***********************************************************************/
+
+    #foi-origine {
+        margin-bottom: $r4;
+    }
+
+    #foi-actuelle {
+        margin-bottom: $r8;
+    }
+
+    #foi-origine,
+    #foi-actuelle {
+
+        label{
+            margin-bottom: $r4;
+            margin-top: $r2;
+        }
+
+
+        ul {
+            list-style-type: none;
+            width: 60%;
+            margin: auto;
+            display: grid;
+            height: 100%;
+
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-areas:
+            'un deux trois quatre cinq six'
+            '. . sept sept . .';
+
+            @include respond(tablet) {
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(7, 1fr);
+                grid-template-areas:
+                'un'
+                'deux'
+                'trois'
+                'quatre'
+                'cinq'
+                'six'
+                'sept';
+            }
+
+            li {
+
+                &:nth-of-type(1) {
+                    grid-area: un;
+
+                    &:before {
+                        @include foi();
+                        background-image: url('../images/foi/animiste.svg');
+                    }
+                }
+                &:nth-of-type(2) {
+                    grid-area: deux;
+                    &:before {
+                        @include foi();
+                        background-image: url('../images/foi/theiste.svg');
+                    }
+                }
+                &:nth-of-type(3) {
+                    grid-area: trois;
+                    &:before {
+                        @include foi();
+                        background-image: url('../images/foi/deiste.svg');
+                    }
+                }
+                &:nth-of-type(4) {
+                    grid-area: quatre;
+                    &:before {
+                        @include foi();
+                        background-image: url('../images/foi/agnostique.svg');
+                    }
+                }
+                &:nth-of-type(5) {
+                    grid-area: cinq;
+                    &:before {
+                        @include foi();
+                        background-image: url('../images/foi/atheiste.svg');
+                    }
+                }
+                &:nth-of-type(6) {
+                    grid-area: six;
+                    &:before {
+                        @include foi();
+                        background-image: url('../images/foi/pantheiste.svg');
+                    }
+                }
+                &:nth-of-type(7) {
+                    grid-area: sept;
+                }
+            }
+
+            label {
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+
+                input {
+                    margin-bottom: $rs;
+                    accent-color: $color !important;
+                    color: $color !important;
+                }
+            }
+        }
+    }
+
+
+    /***********************************************************************
+     * FOI SPIRITUELLE - ACTUELLE
+     ***********************************************************************/

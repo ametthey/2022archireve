@@ -5,3 +5,6 @@ import './components/header';
 import './components/bandeaux';
 import './components/liste-reves';
 import './components/apropos';
+import './components/page-transition';
+import './components/profil';
+import './components/filtres';

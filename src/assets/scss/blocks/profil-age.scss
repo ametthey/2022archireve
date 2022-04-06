@@ -1,0 +1,30 @@
+// AGE
+// TITLE AGE
+#title-age {
+    margin-bottom: $r5;
+}
+
+
+// INPUT AGE
+#item-age {
+    .acf-label {
+        display: none;
+    }
+
+    .acf-append {
+        &:before {
+            bottom: -20px;
+            opacity: 1;
+            left: 26px;
+        }
+    }
+}
+
+#age-output {
+  color: $color;
+  left: 50%;
+  position: absolute;
+  padding: 4px 12px;
+  bottom: -33px;
+  transform: translateX(-50%);
+}
