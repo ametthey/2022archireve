@@ -22,6 +22,8 @@ const mediaQueryList = window.matchMedia(mediaQuery);
 const containerReves = document.querySelector('#container-reves');
 const containerApropos = document.querySelector('#container-apropos');
 
+const sections = document.querySelectorAll('#container-apropos .apropos-section > *');
+
 window.addEventListener( 'load', () => {
 
     if ( home ) {
@@ -29,6 +31,7 @@ window.addEventListener( 'load', () => {
         fadeBackground();
         toggleTheItems();
         textSplitting();
+        fadeInSections();
     }
 });
 
@@ -162,3 +165,49 @@ function checkClasses() {
         containerReves.classList.remove('closed');
     }
 }
+
+
+/*****************************************************************************
+ * Fade In section children
+ *****************************************************************************/
+function fadeInSections(){
+
+    var mutationObserver = new MutationObserver(function(mutations) {
+        mutations.forEach(function(mutation) {
+            if ( mutation.type === 'attributes' ) {
+
+                let options = {
+                    rootMargin: "0px",
+                    threshold: 0.25
+                };
+
+                const callback = (entries, observer) => {
+                    entries.forEach(entry => {
+                        const { target } = entry;
+
+                        if (entry.intersectionRatio >= 0.25) {
+                            target.classList.add("fade-in");
+                        } else {
+                        }
+                    });
+                };
+
+                const observer = new IntersectionObserver(callback, options);
+
+                sections.forEach((section, index) => {
+                    observer.observe(section);
+                });
+
+
+            }
+        });
+    });
+
+    mutationObserver.observe(document.querySelector('#container-apropos'), {
+        attributes: true,
+        characterData: true,
+        attributeOldValue: true,
+        characterDataOldValue: true
+    });
+}
+

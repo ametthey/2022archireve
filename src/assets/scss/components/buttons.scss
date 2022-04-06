@@ -25,6 +25,10 @@
     color: $bg;
     border: $b1 solid $bg;
 
+    &:visited {
+        color: $bg;
+    }
+
     &:hover {
         background-color: $bg;
         color: $color;

@@ -14,7 +14,7 @@ $username = $user->user_nicename;
     </div>
 
 </div>
-<div class="container-profile"><?php echo do_shortcode(' [advanced_form form="form_624d0033175f7" submit_text="Modifier le profil" post="current" redirect="/administration-profil-modified"] '); ?></div>
+<div class="container-profile"><?php echo do_shortcode(' [advanced_form form="form_624d0033175f7" submit_text="Modifier le profil" post="current" redirect="/administration"] '); ?></div>
 <?php } else { ?>
     <?php get_template_part( 'template-parts/404/404-content' ); ?>
 <?php } ?>

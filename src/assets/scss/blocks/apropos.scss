@@ -32,3 +32,18 @@
 .char {
     transition: $transition;
 }
+
+.apropos-section {
+    & > * {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transition: $transition2;
+
+        &.fade-in {
+            opacity: 1;
+            visibility: visible;
+            pointer-events: auto;
+        }
+    }
+}

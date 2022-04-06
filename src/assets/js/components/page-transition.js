@@ -3,48 +3,46 @@ import barba from "@barba/core";
 import barbaCss from '@barba/css';
 
 // tell Barba to use the css plugin
-barba.use(barbaCss);
+// barba.use(barbaCss);
 
 barba.init({
     debug: true,
     timeout: 5000,
-    transitions: [
-        {
-            name: "fade",
-            beforeOnce(data) {
-                addWelcomeAnimationBackground();
-            },
-            once(data) {
-                playWelcomeAnimation();
-            },
-            afterOnce(data) {
-                removeWelcomeAnimationBackground();
-            },
-            leave() {},
-            enter() {},
-            beforeEnter(data) {
-                const myContainer = data.next.container;
+    transitions: [{
+        once(data) {
+            playWelcomeAnimation();
+        },
+        // name: "fade",
+        leave() {
+            removeWelcomeAnimationBackground();
+        },
+        enter(data) {
+            addWelcomeAnimationBackground();
+        },
+        beforeEnter(data) {
+            const myContainer = data.next.container;
 
-                if ( myContainer ) {
-                    const myScripts = document.querySelectorAll('script');
+            addHideClass();
 
-                    myScripts.forEach( nextScript => {
-                        const src = nextScript.src;
+            if ( myContainer ) {
+                const myScripts = document.querySelectorAll('script');
 
-                        if (document.head.querySelector('script[src="' + src + '"]') == undefined) {
-                            //Have to create a new script element in order for the browser to execute the code
-                            const newScript = document.createElement('script');
-                            newScript.src = src;
-                            newScript.async = true;
-                            document.head.append(newScript);
+                myScripts.forEach( nextScript => {
+                    const src = nextScript.src;
 
-                            nextScript.remove(); // Cleaning up the script in the container;
-                        }
-                    });
-                }
-            },
-        }
-    ]
+                    if (document.head.querySelector('script[src="' + src + '"]') == undefined) {
+                        //Have to create a new script element in order for the browser to execute the code
+                        const newScript = document.createElement('script');
+                        newScript.src = src;
+                        newScript.async = true;
+                        document.head.append(newScript);
+
+                        nextScript.remove(); // Cleaning up the script in the container;
+                    }
+                });
+            }
+        },
+    }]
 });
 
 
@@ -84,4 +82,9 @@ function addWelcomeAnimationBackground() {
     if ( containerLoadAnimation ) {
         containerLoadAnimation.classList.remove('hide');
     }
+}
+
+function addHideClass() {
+    const containerLoadAnimation = document.querySelector('.container-page-load-animation');
+    containerLoadAnimation.classList.add('hide');
 }

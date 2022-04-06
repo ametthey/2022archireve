@@ -8,6 +8,4 @@ function removeWelcomeAnimationBackground() {
     if ( containerLoadAnimation ) {
         containerLoadAnimation.classList.add('hide');
     }
-
-    console.log( 'log-in' );
 }

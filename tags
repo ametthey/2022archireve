@@ -1208,6 +1208,7 @@ adapted	includes/acf/assets/inc/select2/3/select2.js	/^					adapted = adapter( t
 adapted	includes/acf/assets/inc/select2/4/select2.full.js	/^							adapted = adapter( this );$/;"	P
 adapted	includes/acf/assets/inc/select2/4/select2.full.js	/^							var adapted = _cssAdapter( clazz );$/;"	V
 add	includes/acf/includes/local-meta.php	/^		function add( $meta = array(), $post_id = 0, $is_main = false ) {$/;"	f
+addHideClass	src/assets/js/components/page-transition.js	/^function addHideClass() {$/;"	F
 addSelectedChoice	includes/acf/assets/inc/select2/3/select2.js	/^		addSelectedChoice: function ( data ) {$/;"	M
 addSelectedChoice	includes/acf/assets/inc/select2/3/select2.min.js	/^					addSelectedChoice: function ( c ) {$/;"	M
 addSliderAccess	includes/acf/assets/inc/timepicker/jquery-ui-timepicker-addon.js	/^			addSliderAccess: false,$/;"	P
@@ -1284,7 +1285,6 @@ admin_table_views	includes/acf/includes/admin/admin-field-groups.php	/^		public 
 after	includes/acf/includes/forms/form-user.php	/^				$after  = '<\/div>';$/;"	v
 after	includes/acf/includes/forms/form-user.php	/^			$after  = '<\/tbody><\/table>';$/;"	v
 afterInject	includes/acf/assets/inc/timepicker/jquery-ui-timepicker-addon.js	/^			afterInject: null,$/;"	P
-afterOnce	src/assets/js/components/page-transition.js	/^            afterOnce(data) {$/;"	M
 after_fields	includes/acf/pro/fields/class-acf-field-repeater.php	/^				$after_fields  = '<\/td>';$/;"	v
 after_fields	includes/acf/pro/fields/class-acf-field-repeater.php	/^			$after_fields  = '';$/;"	v
 ageContainer	src/assets/js/components/profil.js	/^const ageContainer = document.querySelector('#item-age');$/;"	V
@@ -1547,6 +1547,7 @@ attr	includes/acf/assets/inc/select2/4/select2.full.js	/^						var attr = 0;$/;"
 attr	includes/acf/assets/inc/select2/4/select2.js	/^						var attr = 0;$/;"	V
 attrValue	includes/acf/assets/inc/timepicker/jquery-ui-timepicker-addon.js	/^					var attrValue = $input.attr( 'time:' + attrName );$/;"	V
 attribute	includes/acf/includes/acf-field-functions.php	/^	\/\/ Clean up class attribute.$/;"	c
+attributeOldValue	src/assets/js/components/apropos.js	/^        attributeOldValue: true,$/;"	P
 attributes	includes/acf/assets/inc/select2/3/select2.js	/^					attributes: true,$/;"	P
 attributes	includes/acf/assets/inc/select2/3/select2.min.js	/^									attributes: ! 0,$/;"	P
 attributes	includes/acf/assets/inc/select2/4/select2.full.js	/^							attributes: true,$/;"	P
@@ -1556,6 +1557,7 @@ attributes	includes/acf/includes/admin/views/field-group-field-conditional-logic
 attributes	includes/acf/includes/rest-api/class-acf-rest-embed-links.php	/^		while ( $attributes = array_pop( $this->links ) ) {$/;"	v
 attributes	includes/acf/pro/blocks.php	/^	$attributes = array($/;"	v
 attributes	includes/acf/pro/blocks.php	/^	$attributes = array();$/;"	v
+attributes	src/assets/js/components/apropos.js	/^        attributes: true,$/;"	P
 attributes_html	includes/acf/includes/acf-field-functions.php	/^	$attributes_html = acf_esc_attr( $wrapper );$/;"	v
 attrs	includes/acf/assets/inc/select2/3/select2.js	/^						attrs = style.split( ';' );$/;"	P
 attrs	includes/acf/assets/inc/select2/4/select2.full.js	/^						var attrs = style.split( ';' );$/;"	V
@@ -1655,8 +1657,7 @@ basename	includes/acf/pro/admin/admin-updates.php	/^				$basename = acf_get_sett
 basename	includes/acf/pro/updates.php	/^			$basename = acf_get_setting( 'basename' );$/;"	v
 before	includes/acf/includes/forms/form-user.php	/^				$before = '<div class="acf-user-' . $args['view'] . '-fields acf-fields -clear">';$/;"	v
 before	includes/acf/includes/forms/form-user.php	/^			$before = '<table class="form-table"><tbody>';$/;"	v
-beforeEnter	src/assets/js/components/page-transition.js	/^            beforeEnter(data) {$/;"	M
-beforeOnce	src/assets/js/components/page-transition.js	/^            beforeOnce(data) {$/;"	M
+beforeEnter	src/assets/js/components/page-transition.js	/^        beforeEnter(data) {$/;"	M
 beforeShow	includes/acf/assets/inc/timepicker/jquery-ui-timepicker-addon.js	/^				beforeShow: function ( input, dp_inst ) {$/;"	M
 before_fields	includes/acf/pro/fields/class-acf-field-repeater.php	/^				$before_fields = '<td class="acf-fields -left">';$/;"	v
 before_fields	includes/acf/pro/fields/class-acf-field-repeater.php	/^				$before_fields = '<td class="acf-fields">';$/;"	v
@@ -1780,6 +1781,7 @@ callback	includes/acf/assets/inc/select2/4/select2.full.js	/^						callback = ca
 callback	includes/acf/assets/inc/select2/4/select2.js	/^								callback = relName;$/;"	P
 callback	includes/acf/assets/inc/select2/4/select2.js	/^							callback = deps;$/;"	P
 callback	includes/acf/assets/inc/select2/4/select2.js	/^						callback = callback || function () {};$/;"	P
+callback	src/assets/js/components/apropos.js	/^                const callback = (entries, observer) => {$/;"	F
 callbackType	includes/acf/assets/inc/select2/4/select2.full.js	/^							callbackType = typeof callback,$/;"	P
 callbackType	includes/acf/assets/inc/select2/4/select2.full.js	/^							callbackType === 'function'$/;"	P
 callbackType	includes/acf/assets/inc/select2/4/select2.full.js	/^							callbackType === 'undefined' ||$/;"	P
@@ -1880,6 +1882,8 @@ changed	includes/acf/assets/inc/select2/4/select2.js	/^					var changed = false;
 changed	includes/acf/assets/inc/select2/4/select2.js	/^					var changed = this._isChangeMutation( evt, mutations );$/;"	V
 changeddt	includes/acf/assets/inc/timepicker/jquery-ui-timepicker-addon.js	/^				changeddt = changed[ method ]( 'getDate' );$/;"	P
 changelog	includes/acf/pro/admin/admin-updates.php	/^		function get_changelog_changes( $changelog = '', $version = '' ) {$/;"	v
+characterData	src/assets/js/components/apropos.js	/^        characterData: true,$/;"	P
+characterDataOldValue	src/assets/js/components/apropos.js	/^        characterDataOldValue: true$/;"	P
 characters	template-parts/home/filtres/filtres-tag.php	/^    $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';$/;"	v
 charactersLength	template-parts/home/filtres/filtres-tag.php	/^    $charactersLength = strlen($characters);$/;"	v
 chars	includes/acf/assets/inc/select2/4/select2.full.js	/^				var chars = '';$/;"	V
@@ -2854,7 +2858,7 @@ enqueue_style	includes/acf/includes/assets.php	/^		public function enqueue_style
 enqueue_uploader	includes/acf/includes/assets.php	/^		public function enqueue_uploader() {$/;"	f
 ensureHighlightVisible	includes/acf/assets/inc/select2/3/select2.js	/^		ensureHighlightVisible: function () {$/;"	M
 ensureHighlightVisible	includes/acf/assets/inc/select2/3/select2.min.js	/^					ensureHighlightVisible: function () {$/;"	M
-enter	src/assets/js/components/page-transition.js	/^            enter() {},$/;"	M
+enter	src/assets/js/components/page-transition.js	/^        enter(data) {$/;"	M
 equal	includes/acf/assets/inc/select2/3/select2.js	/^	function equal( a, b ) {$/;"	F
 error	includes/acf/assets/inc/select2/3/select2.js	/^					error: function ( jqXHR, textStatus, errorThrown ) {$/;"	M
 error	includes/acf/assets/inc/select2/3/select2.min.js	/^								error: function ( a, b, c ) {$/;"	M
@@ -2977,6 +2981,7 @@ f	includes/acf/assets/inc/select2/4/select2.js	/^							f: prefix ? prefix + '!'
 f	includes/acf/assets/inc/select2/4/select2.min.js	/^					f = y.map,$/;"	P
 f	includes/acf/assets/inc/timepicker/jquery-ui-timepicker-addon.js	/^									f = $t.data( 'for' ); \/\/ loses scope, so we use data-for$/;"	P
 fadeBackground	src/assets/js/components/apropos.js	/^function fadeBackground() {$/;"	F
+fadeInSections	src/assets/js/components/apropos.js	/^function fadeInSections(){$/;"	F
 featured_id	includes/acf/includes/api/api-helpers.php	/^			if ( $featured_id = get_post_thumbnail_id( $attachment->ID ) ) {$/;"	v
 field	includes/acf/includes/acf-field-functions.php	/^		$field = acf_get_local_field( $id );$/;"	v
 field	includes/acf/includes/acf-field-functions.php	/^		$field = acf_get_raw_field( $id );$/;"	v
@@ -4744,7 +4749,7 @@ layout_prefix	includes/acf/pro/fields/class-acf-field-flexible-content.php	/^			
 layout_schema	includes/acf/pro/fields/class-acf-field-flexible-content.php	/^				$layout_schema = array($/;"	v
 layouts	includes/acf/pro/fields/class-acf-field-flexible-content.php	/^			$layouts = array();$/;"	v
 layouts_to_update	includes/acf/pro/fields/class-acf-field-flexible-content.php	/^			$layouts_to_update = array_count_values( array_column( $value, 'acf_fc_layout' ) );$/;"	v
-leave	src/assets/js/components/page-transition.js	/^            leave() {},$/;"	M
+leave	src/assets/js/components/page-transition.js	/^        leave() {$/;"	M
 left	includes/acf/assets/inc/color-picker-alpha/wp-color-picker-alpha.js	/^					left: 0,$/;"	P
 left	includes/acf/assets/inc/color-picker-alpha/wp-color-picker-alpha.min.js	/^								left: 0,$/;"	P
 left	includes/acf/assets/inc/select2/3/select2.js	/^				left: '-10000px',$/;"	P
@@ -5315,8 +5320,8 @@ multiple	includes/acf/assets/inc/select2/3/select2.js	/^					multiple = opts.mul
 multipleSelections	includes/acf/assets/inc/select2/4/select2.full.js	/^					var multipleSelections = data.length > 1;$/;"	V
 multipleSelections	includes/acf/assets/inc/select2/4/select2.js	/^					var multipleSelections = data.length > 1;$/;"	V
 multisite	includes/acf/includes/class-acf-data.php	/^		var $multisite = false;$/;"	v
-myContainer	src/assets/js/components/page-transition.js	/^                const myContainer = data.next.container;$/;"	V
-myScripts	src/assets/js/components/page-transition.js	/^                    const myScripts = document.querySelectorAll('script');$/;"	V
+myContainer	src/assets/js/components/page-transition.js	/^            const myContainer = data.next.container;$/;"	V
+myScripts	src/assets/js/components/page-transition.js	/^                const myScripts = document.querySelectorAll('script');$/;"	V
 n	includes/acf/assets/inc/color-picker-alpha/wp-color-picker-alpha.min.js	/^							n = Math.round( l + 2 * e + 2 * s );$/;"	P
 n	includes/acf/assets/inc/select2/3/select2.js	/^			var n = input.length - max;$/;"	V
 n	includes/acf/assets/inc/select2/3/select2.js	/^			var n = min - input.length;$/;"	V
@@ -5507,7 +5512,6 @@ name	includes/acf/pro/fields/class-acf-field-gallery.php	/^			$this->name     = 
 name	includes/acf/pro/fields/class-acf-field-repeater.php	/^			$this->name     = 'repeater';$/;"	v
 name	includes/acf/pro/locations/class-acf-location-block.php	/^			$this->name        = 'block';$/;"	v
 name	includes/acf/pro/locations/class-acf-location-options-page.php	/^			$this->name        = 'options_page';$/;"	v
-name	src/assets/js/components/page-transition.js	/^            name: "fade",$/;"	P
 nameParts	includes/acf/assets/inc/select2/4/select2.full.js	/^							nameParts = name.split( '\/' );$/;"	P
 nameParts	includes/acf/assets/inc/select2/4/select2.js	/^							nameParts = name.split( '\/' );$/;"	P
 nameSegment	includes/acf/assets/inc/select2/4/select2.full.js	/^								nameSegment = nameParts$/;"	P
@@ -5534,7 +5538,7 @@ newDirection	includes/acf/assets/inc/select2/4/select2.js	/^						newDirection =
 newDirection	includes/acf/assets/inc/select2/4/select2.js	/^						newDirection = 'below';$/;"	P
 newDirection	includes/acf/assets/inc/select2/4/select2.js	/^						newDirection == 'above' ||$/;"	P
 newDirection	includes/acf/assets/inc/select2/4/select2.js	/^					var newDirection = null;$/;"	V
-newScript	src/assets/js/components/page-transition.js	/^                            const newScript = document.createElement('script');$/;"	V
+newScript	src/assets/js/components/page-transition.js	/^                        const newScript = document.createElement('script');$/;"	V
 newVal	src/assets/js/components/profil.js	/^  const newVal = Number(((val - min) * 100) \/ (max - min));$/;"	V
 newWidth	includes/acf/assets/inc/timepicker/jquery-ui-timepicker-addon.js	/^										newWidth = oldWidth - sliderAccessWidth,$/;"	P
 new_count	includes/acf/pro/fields/class-acf-field-flexible-content.php	/^			$new_count = empty( $new_value ) ? 0 : count( $new_value );$/;"	v
@@ -5741,6 +5745,7 @@ objects	includes/acf/includes/admin/admin-field-groups.php	/^			$objects = array
 objects	includes/acf/includes/admin/admin-field-groups.php	/^			$objects = array_values( $objects );$/;"	v
 objects	includes/acf/includes/api/api-helpers.php	/^	$objects = get_post_types( $args, 'objects' );$/;"	v
 objects	includes/acf/includes/api/api-term.php	/^	$objects = get_taxonomies( $args, 'objects' );$/;"	v
+observer	src/assets/js/components/apropos.js	/^                const observer = new IntersectionObserver(callback, options);$/;"	V
 offset	includes/acf/assets/inc/select2/3/select2.js	/^				offset = container.offset(),$/;"	P
 offset	includes/acf/assets/inc/select2/3/select2.js	/^				offset = this.container.offset();$/;"	P
 offset	includes/acf/assets/inc/select2/3/select2.js	/^			offset = el.selectionStart;$/;"	P
@@ -5794,7 +5799,7 @@ onSortEnd	includes/acf/assets/inc/select2/3/select2.js	/^		onSortEnd: function (
 onSortEnd	includes/acf/assets/inc/select2/3/select2.min.js	/^					onSortEnd: function () {$/;"	M
 onSortStart	includes/acf/assets/inc/select2/3/select2.js	/^		onSortStart: function () {$/;"	M
 onSortStart	includes/acf/assets/inc/select2/3/select2.min.js	/^					onSortStart: function () {$/;"	M
-once	src/assets/js/components/page-transition.js	/^            once(data) {$/;"	M
+once	src/assets/js/components/page-transition.js	/^        once(data) {$/;"	M
 oneLine	includes/acf/assets/inc/timepicker/jquery-ui-timepicker-addon.js	/^			oneLine: false,$/;"	P
 onlyItem	includes/acf/assets/inc/select2/4/select2.full.js	/^					function onlyItem( item ) {$/;"	F
 onlyItem	includes/acf/assets/inc/select2/4/select2.js	/^					function onlyItem( item ) {$/;"	F
@@ -5869,6 +5874,7 @@ options	includes/acf/includes/fields/class-acf-field-taxonomy.php	/^		function g
 options	includes/acf/includes/fields/class-acf-field-user.php	/^		function get_ajax_query( $options = array() ) {$/;"	v
 options	includes/acf/pro/fields/class-acf-field-clone.php	/^			$options = acf_parse_args($/;"	v
 options	includes/acf/pro/fields/class-acf-field-flexible-content.php	/^			$options = acf_parse_args($/;"	v
+options	src/assets/js/components/apropos.js	/^                let options = {$/;"	O
 options_page	includes/acf/pro/locations/class-acf-location-options-page.php	/^				$options_page = $screen['options_page'];$/;"	v
 opts	includes/acf/assets/inc/color-picker-alpha/wp-color-picker-alpha.js	/^					opts = self.options,$/;"	P
 opts	includes/acf/assets/inc/select2/3/select2.js	/^				opts = args.length === 0 ? {} : $.extend( {}, args[ 0 ] );$/;"	P
@@ -6884,6 +6890,7 @@ roles	includes/acf/includes/ajax/class-acf-ajax-query-users.php	/^				$roles = a
 roles	includes/acf/includes/ajax/class-acf-ajax-query-users.php	/^				$roles = acf_get_user_role_labels();$/;"	v
 roles	includes/acf/includes/api/api-helpers.php	/^		$roles = acf_extract_var( $args, 'role' );$/;"	v
 roles	includes/acf/includes/api/api-helpers.php	/^	$roles          = array();$/;"	v
+rootMargin	src/assets/js/components/apropos.js	/^                    rootMargin: "0px",$/;"	P
 row	includes/acf/includes/admin/views/html-admin-page-upgrade-network.php	/^				var $row = $input.closest('tr');$/;"	v
 row	includes/acf/includes/api/api-template.php	/^	$row = acf_get_loop( 'active' );$/;"	v
 row	includes/acf/includes/api/api-template.php	/^	$row = get_row();$/;"	v
@@ -7061,6 +7068,7 @@ secondMinOriginal	includes/acf/assets/inc/timepicker/jquery-ui-timepicker-addon.
 secondText	includes/acf/assets/inc/timepicker/jquery-ui-timepicker-addon.js	/^			secondText: 'Second',$/;"	P
 second_slider	includes/acf/assets/inc/timepicker/jquery-ui-timepicker-addon.js	/^		second_slider: null,$/;"	P
 sections	includes/acf/includes/updates.php	/^			$sections = array($/;"	v
+sections	src/assets/js/components/apropos.js	/^const sections = document.querySelectorAll('#container-apropos .apropos-section > *');$/;"	V
 sel	includes/acf/assets/inc/select2/3/select2.js	/^			var sel = document.selection.createRange();$/;"	V
 select	includes/acf/assets/inc/select2/3/select2.js	/^				this.select = select = opts.element;$/;"	P
 select	includes/acf/assets/inc/select2/4/select2.full.js	/^						select: 'selecting',$/;"	P
@@ -7293,7 +7301,7 @@ src	gulpfile.babel.js	/^        src: ['src\/assets\/js\/main.js', 'src\/assets\/
 src	gulpfile.babel.js	/^        src: ['src\/assets\/scss\/bundle.scss'],$/;"	P
 src	includes/acf/includes/api/api-helpers.php	/^			$src      = wp_get_attachment_image_src( $attachment->ID, 'full' );$/;"	v
 src	includes/acf/includes/api/api-helpers.php	/^			$src = wp_get_attachment_image_src( $sizes_id, $size );$/;"	v
-src	src/assets/js/components/page-transition.js	/^                        const src = nextScript.src;$/;"	V
+src	src/assets/js/components/page-transition.js	/^                    const src = nextScript.src;$/;"	V
 starI	includes/acf/assets/inc/select2/4/select2.full.js	/^									starI = i;$/;"	P
 starI	includes/acf/assets/inc/select2/4/select2.js	/^									starI = i;$/;"	P
 starMap	includes/acf/assets/inc/select2/4/select2.full.js	/^							starMap = ( map && map[ '*' ] ) || {};$/;"	P
@@ -7741,6 +7749,7 @@ this_posts	includes/acf/includes/api/api-helpers.php	/^		$this_posts = array();$
 this_terms	includes/acf/includes/api/api-term.php	/^				$this_terms = array_slice( $ordered_terms, $offset, $length );$/;"	v
 this_terms	includes/acf/includes/api/api-term.php	/^		$this_terms = array();$/;"	v
 this_users	includes/acf/includes/api/api-helpers.php	/^		$this_users = array();$/;"	v
+threshold	src/assets/js/components/apropos.js	/^                    threshold: 0.25$/;"	P
 thumb	includes/acf/pro/fields/class-acf-field-gallery.php	/^				$thumb = $attachment['sizes']['thumbnail']['url'];$/;"	v
 thumb	includes/acf/pro/fields/class-acf-field-gallery.php	/^				$thumb = $attachment['thumb']['src'];$/;"	v
 thumb	includes/acf/pro/fields/class-acf-field-gallery.php	/^				$thumb = $attachment['url'];$/;"	v
@@ -7925,7 +7934,6 @@ transient	includes/acf/includes/updates.php	/^				$transient = get_transient( $t
 transient_checked	includes/acf/includes/updates.php	/^					$transient_checked = isset( $transient['checked'] ) ? $transient['checked'] : array();$/;"	v
 transient_name	includes/acf/includes/updates.php	/^			$transient_name = 'acf_plugin_info_' . $id;$/;"	v
 transient_name	includes/acf/includes/updates.php	/^			$transient_name = 'acf_plugin_updates';$/;"	v
-transitions	src/assets/js/components/page-transition.js	/^    transitions: [$/;"	P
 translate_field	includes/acf/includes/fields/class-acf-field-button-group.php	/^		function translate_field( $field ) {$/;"	f
 translate_field	includes/acf/includes/fields/class-acf-field-checkbox.php	/^		function translate_field( $field ) {$/;"	f
 translate_field	includes/acf/includes/fields/class-acf-field-message.php	/^		function translate_field( $field ) {$/;"	f
