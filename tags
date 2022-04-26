@@ -8159,11 +8159,9 @@ use_path	includes/acf/includes/api/api-helpers.php	/^		$use_path     = isset( $a
 user	header-home.php	/^$user = wp_get_current_user();$/;"	v
 user	includes/acf/includes/api/api-helpers.php	/^			$user = acf_extract_var( $users, $key );$/;"	v
 user	includes/acf/includes/locations/class-acf-location-current-user-role.php	/^			$user = wp_get_current_user();$/;"	v
-user	page-administration-profil-modified.php	/^            $user = wp_get_current_user();$/;"	v
 user	page-administration.php	/^            $user = wp_get_current_user();$/;"	v
 user	page-inscription-profile-message-de-remerciements.php	/^$user = wp_get_current_user();$/;"	v
 user	page-inscription-profile.php	/^    $user = wp_get_current_user();$/;"	v
-user	page-profile.php	/^$user = wp_get_current_user();$/;"	v
 user	single-reveur.php	/^$user = wp_get_current_user();$/;"	v
 user	template-parts/administration/pseudo.php	/^$user = wp_get_current_user();$/;"	v
 user_data	includes/acf/includes/fields/class-acf-field-user.php	/^				$user_data = get_userdata( $user_id );$/;"	v
@@ -8184,11 +8182,9 @@ user_roles	includes/acf/includes/api/api-helpers.php	/^	$user_roles = acf_get_pr
 user_search_columns	includes/acf/includes/fields/class-acf-field-user.php	/^		function user_search_columns( $columns, $search, $WP_User_Query ) {$/;"	f
 username	header-home.php	/^$username = $user->user_nicename;$/;"	v
 username	lib/logins.php	/^    if( $username == "" || $password == "" ) {$/;"	v
-username	page-administration-profil-modified.php	/^            $username = $user->user_nicename;$/;"	v
 username	page-administration.php	/^            $username = $user->user_nicename;$/;"	v
 username	page-inscription-profile-message-de-remerciements.php	/^$username = $user->user_nicename;$/;"	v
 username	page-inscription-profile.php	/^    $username = $user->user_nicename;$/;"	v
-username	page-profile.php	/^$username = $user->user_nicename;$/;"	v
 username	single-reveur.php	/^$username = $user->user_nicename;$/;"	v
 username	template-parts/administration/pseudo.php	/^$username = $user->user_nicename;$/;"	v
 users	includes/acf/includes/acf-user-functions.php	/^	$users = get_users( $args );$/;"	v
