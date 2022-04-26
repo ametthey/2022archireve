@@ -8,5 +8,3 @@ import './components/apropos';
 import './components/profil';
 import './components/filtres';
 import './components/page-transition';
-
-console.log( 'test' );
